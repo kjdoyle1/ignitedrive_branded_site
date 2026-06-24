@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:#F4F1E9;color:#1B1916;font-family:'IBM Plex Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+::selection{background:#1F6B6B;color:#F4F1E9}
+.body p{font-size:clamp(1.08rem,1.4vw,1.2rem);line-height:1.72;color:#2a2722;margin:0 0 1.45em;text-wrap:pretty}
+.body p a{color:#1F6B6B;border-bottom:1px solid rgba(31,107,107,0.4)}
+@media (max-width:600px){.nav-links{display:none !important}}
+</style>
+</helmet>
+
+<div style="overflow-x:hidden">
+
+<!-- NAV -->
+<header style="position:sticky;top:0;z-index:50;background:rgba(244,241,233,0.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(27,25,22,0.14)">
+  <div style="max-width:1240px;margin:0 auto;padding:13px clamp(20px,5vw,64px);display:flex;align-items:center;justify-content:space-between;gap:20px">
+    <a href="index.html" style="display:flex;align-items:center;flex-shrink:0">
+      <img src="images/ignitedrive-labs-logo-wide.png" alt="IgniteDrive Labs" style="height:28px;width:auto;display:block">
+    </a>
+    <nav style="display:flex;align-items:center;gap:clamp(14px,2.4vw,30px)">
+      <span class="nav-links"><a href="index.html#insights" style="font-size:0.9rem;font-weight:500;color:#43403a;padding:4px 0;border-bottom:1px solid transparent" style-hover="color:#1F6B6B;border-bottom:1px solid #1F6B6B">All Insights</a></span>
+      <a href="index.html#contact" style="font-size:0.88rem;font-weight:500;background:#1B1916;color:#F4F1E9;padding:9px 17px;white-space:nowrap" style-hover="background:#1F6B6B">Start a Conversation</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ARTICLE HEADER -->
+<article>
+<div style="max-width:760px;margin:0 auto;padding:clamp(40px,6vw,80px) clamp(20px,5vw,40px) clamp(28px,4vw,44px)">
+  <a href="index.html#insights" style="display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:#3A7A74;margin-bottom:clamp(28px,4vw,44px)" style-hover="color:#1F6B6B">←&nbsp;&nbsp;Field Notes</a>
+  <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:0.7rem;letter-spacing:0.16em;text-transform:uppercase;color:#8a8478;margin-bottom:22px">
+    <span style="color:#1F6B6B">Field Note</span>
+    <span style="width:4px;height:4px;background:#c9bfae;transform:rotate(45deg);display:inline-block"></span>
+    <span>Feb 2025</span>
+    <span style="width:4px;height:4px;background:#c9bfae;transform:rotate(45deg);display:inline-block"></span>
+    <span>8 min read</span>
+  </div>
+  <h1 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(2.2rem,4.6vw,3.6rem);line-height:1.06;letter-spacing:-0.018em;margin:0 0 22px;text-wrap:balance">The Car Wash Industry Isn’t Behind—We’re Thinking About It Wrong</h1>
+  <p style="font-family:'Newsreader',serif;font-style:italic;font-size:clamp(1.25rem,2vw,1.6rem);line-height:1.35;color:#4a453c;margin:0 0 30px;max-width:34ch;text-wrap:pretty">What looks like lag may actually be the friction of moving from a mechanical past to a digital-first future.</p>
+  <div style="display:flex;align-items:center;gap:13px;padding-top:24px;border-top:1px solid rgba(27,25,22,0.16)">
+    <div style="width:42px;height:42px;border-radius:50%;overflow:hidden;background:#1B1916;flex:none">
+      <img src="images/kyle-doyle.jpg" alt="Kyle Doyle" style="width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(1) contrast(1.08)">
+    </div>
+    <div style="display:flex;flex-direction:column;gap:2px">
+      <span style="font-size:0.96rem;font-weight:600;color:#1B1916">Kyle Doyle</span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:#8a8478">Founder, IgniteDrive Labs</span>
+    </div>
+  </div>
+</div>
+
+<!-- LEAD IMAGE -->
+<div style="max-width:980px;margin:0 auto clamp(36px,5vw,56px);padding:0 clamp(20px,5vw,40px)">
+  <div style="position:relative;border:1px solid #1B1916;aspect-ratio:16/9;overflow:hidden;background:#1B1916">
+    <img src="images/nrf-show-floor.png" alt="The NRF retail-technology show floor at the Javits Center, crowded with attendees beneath large banners" style="width:100%;height:100%;object-fit:cover;object-position:center;filter:grayscale(1) contrast(1.06)">
+    <span style="position:absolute;top:14px;left:14px;font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.1em;color:#F4F1E9;background:rgba(27,25,22,0.55);padding:3px 6px">FIG. 01</span>
+    <span style="position:absolute;bottom:14px;left:14px;font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.06em;text-transform:uppercase;background:#1B1916;color:#F4F1E9;padding:6px 9px">photo — NRF show floor, Javits Center</span>
+  </div>
+</div>
+
+<!-- BODY -->
+<div class="body" style="max-width:680px;margin:0 auto;padding:0 clamp(20px,5vw,40px) clamp(48px,6vw,80px)">
+
+  <p>If you have spent any time around car washing, you have heard the line about “car washing being x years behind.” Sometimes it’s twenty, sometimes it’s five, but let’s use ten. It is a line that feels more spat than spoken. Laced with the frustration of the ambitious, it is a line that says <em>I want to accomplish more but my hands are tied.</em></p>
+
+  <p>Most recently I heard it from an executive panel speaking at ICA’s ROADMAP conference in Dallas, and it was the trigger that sent me on this journey. One of the executives assessed, “car washing is still 10 years behind.”</p>
+
+  <p>I’ve said it myself many times. Usually we are referring to the legacy POS companies who represent the tip of the spear of technology in car washing. I used the line as someone who comes from that world. I was determined to be disruptive to the POS establishment. I built my career trying to push the industry forward—from working in my family’s tunnel controller business to helping build one of the first cloud-based POS platforms in car washing.</p>
+
+  <p>But sitting there, I started to wonder if it was still true. And on a deeper level, whether we are asking the right question.</p>
+
+  <p>Six weeks later, I found myself at the National Retail Federation’s annual show in New York City, the largest retail technology conference in the world.</p>
+
+  <p>It’s hard to overstate the scale. Roughly twice the size of the ICA Show, with four times the attendees, and a global audience moving through the aisles.</p>
+
+  <p>The major players were all there: Microsoft, Amazon, Oracle, Shopify. But what I was most interested in wasn’t where retail was going.</p>
+
+  <p>I wanted to understand where it is today.</p>
+
+  <p>Because when we say car washing is “behind,” it’s a statement of comparison. The question is: compared to what?</p>
+
+  <p>So I started talking to people.</p>
+
+  <p>I started with a retail consulting firm and met Mark, a longtime industry leader. I explained what I was hearing in car washing: the frustration with legacy systems, the push toward new platforms, the sense of being stuck.</p>
+
+  <p>He smiled.</p>
+
+  <p>“We’re dealing with the exact same thing,” he said. “Some companies are running 20-year-old systems. Others built custom tools that no longer scale. Migration is hard everywhere.”</p>
+
+  <p>As I spoke with more retailers, the pattern repeated. Everyone wanted more modern systems, more data, more AI—but the real challenge wasn’t ambition. It was execution. Data was fragmented. Systems didn’t talk to each other. And migrating to something better was complex and risky.</p>
+
+  <p>Retail wasn’t “ahead” in the way I expected. They were dealing with many of the same challenges.</p>
+
+  <p>Sitting in the bright Jacob Javits atrium afterward, I tried to reconcile what I had heard. Retail clearly wasn’t “behind,” yet many of the same frustrations existed. And yet in car washing, the feeling of being behind was very real.</p>
+
+  <p>It started to feel like we were collapsing multiple problems into a single narrative, and misdiagnosing the issue as a result.</p>
+
+  <p>As I wrote down the friction points I’ve heard from operators, a clearer picture emerged. What we’re experiencing isn’t one singular friction.</p>
+
+  <p style="font-family:'Newsreader',serif;font-size:clamp(1.4rem,2.4vw,1.9rem);line-height:1.2;color:#1B1916;margin:0.4em 0 1.1em">It’s three. <span style="color:#1F6B6B">Availability friction, migration friction, and mindset friction.</span></p>
+
+  <p>And they don’t exist independently—they layer, amplify, and compound each other. The more I thought about it that way, the less it felt like we were an industry falling behind, and more like an industry wrestling with a transition.</p>
+
+  <blockquote style="margin:clamp(36px,5vw,52px) 0;padding:4px 0 4px clamp(20px,3vw,30px);border-left:3px solid #1F6B6B">
+    <p style="font-family:'Newsreader',serif;font-style:italic;font-weight:500;font-size:clamp(1.5rem,2.8vw,2.1rem);line-height:1.28;color:#1B1916;margin:0;text-wrap:pretty">Industries don’t feel behind because they lack innovation. They feel behind when identity shifts faster than mindset.</p>
+  </blockquote>
+
+  <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(1.6rem,2.8vw,2.2rem);line-height:1.12;letter-spacing:-0.01em;margin:clamp(44px,5vw,64px) 0 6px">Friction No. 1: Availability</h2>
+  <div style="width:38px;height:3px;background:#1F6B6B;margin:0 0 24px"></div>
+
+  <p>For a long time, this was real. Operators simply didn’t have many options when it came to POS and supporting technology.</p>
+
+  <p>But that’s no longer true.</p>
+
+  <p>Today, there are more software options than ever: new platforms built from the ground up, along with legacy providers rethinking their systems. Around them, an ecosystem is forming—CRM, AI camera companies, operations software, marketing tools, and more.</p>
+
+  <p>The issue with legacy systems isn’t just their age. It’s how they were built—layer upon layer over time, creating architectures that are difficult to extend and data structures that are hard to untangle.</p>
+
+  <p>It’s like starting with a shed and adding rooms for twenty years until it becomes a house that technically works, but no longer makes sense.</p>
+
+  <p>New platforms are being designed differently from the start. For perhaps the first time, we have real optionality. Availability is no longer the core problem—even if it still feels that way.</p>
+
+  <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(1.6rem,2.8vw,2.2rem);line-height:1.12;letter-spacing:-0.01em;margin:clamp(44px,5vw,64px) 0 6px">Friction No. 2: Migration</h2>
+  <div style="width:38px;height:3px;background:#1F6B6B;margin:0 0 24px"></div>
+
+  <p>This is the reality of moving from legacy systems to modern ones, and it’s where car washing aligns closely with retail as a whole.</p>
+
+  <p>Switching systems is hard. It carries risk, cost, and operational disruption. In subscription businesses, migrating credit card tokens can create real anxiety around losing members.</p>
+
+  <p>Retailers face similar challenges, often at even greater scale: thousands of SKUs, inventory systems, logistics, and ERP integrations layered together. Migrating all of that sounds pretty painful. (Although let’s see them rewire a 20-year-old tunnel controller, with a rat’s-nest of unlabeled control wiring, in time to open for Saturday!)</p>
+
+  <p>The cover article of a recent edition of the Harvard Business Review was <em>Rethinking Nonstop Transformation</em>, with the subheading <em>Real progress comes from steady adaptation, not endless upheaval.</em> Easier said than done, Harvard—but the point is, we’re all facing it.</p>
+
+  <p>The desire to modernize is clear. The difficulty is in making the transition. This isn’t a sign of being behind. It’s a sign of being in the middle of change.</p>
+
+  <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(1.6rem,2.8vw,2.2rem);line-height:1.12;letter-spacing:-0.01em;margin:clamp(44px,5vw,64px) 0 6px">Friction No. 3: Mindset</h2>
+  <div style="width:38px;height:3px;background:#1F6B6B;margin:0 0 24px"></div>
+
+  <p>The third, and most significant, is mindset friction.</p>
+
+  <p>As I walked the remaining booths that afternoon, I stopped to talk to fewer people and tried to just sense what made this show feel so different from the car wash trade shows I have been going to since I was 15 years old. Was this our future, or just another version of our present?</p>
+
+  <p>I thought about what was different, and it dawned on me. It was obvious and powerful at the same time.</p>
+
+  <p style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(1.7rem,3.2vw,2.4rem);line-height:1.15;color:#1F6B6B;margin:0.5em 0 1em">There was no equipment.</p>
+
+  <p>No big machines. No conveyors. No mitters. No wraps. No tire brushes or backroom gear. We think of those as the defining backdrop of our trade shows. For decades, those machines were who we were. The conversations were of a more tangible nature. The millionaires were still wearing jeans and had ball-bearing grease under their nails.</p>
+
+  <p>I hope that spirit never leaves us, but it has changed.</p>
+
+  <p>We are no longer a mechanical industry obsessed with throughput and conveyor speeds. How many cars you washed last year is no longer the primary KPI. Cleaning cars will always be part of it, but it represents less and less of the conversations we have.</p>
+
+  <p>Our future demands a mindset that is visible today at NRF—the mindset that we have now become a digital-first business. This mechanical world of equipment and chemistry will always be in our DNA, but we must fully release it as the core of our identity.</p>
+
+  <p>Our hesitancy to adopt this always-changing, digital-first mindset is understandable, for two reasons.</p>
+
+  <p>First is what I will call <strong style="font-weight:600">the myth of arrival.</strong></p>
+
+  <p>We have all just been through the rapid, private-equity-fueled explosion of the last 5–7 years, powered by our customers’ affection for subscriptions and how great it feels to wash your car whenever you want.</p>
+
+  <p>As we looked around, we saw an industry transformed. A repeatable model with pay stations, gates, and free vacs. We had solved most of the physical problems and had the floor plans and playbooks ready to go.</p>
+
+  <p>And because of that, we wanted to think we had arrived at some safe endpoint. We wanted technology and software tailored to the terrain of this new home. As if it should have arrived at the same time we did. Maybe even already there, waiting for us.</p>
+
+  <p>But the general retail world tells us that the idea of arrival is a myth.</p>
+
+  <blockquote style="margin:clamp(36px,5vw,52px) 0;padding:4px 0 4px clamp(20px,3vw,30px);border-left:3px solid #1F6B6B">
+    <p style="font-family:'Newsreader',serif;font-style:italic;font-weight:500;font-size:clamp(1.4rem,2.6vw,1.95rem);line-height:1.3;color:#1B1916;margin:0;text-wrap:pretty">We are only getting started. But no one likes to hear that—after finally arriving at a safe landing spot, after an arduous journey—that we leave first thing in the morning.</p>
+  </blockquote>
+
+  <p>The second thing that makes this adoption of a digital-first mindset challenging is the way we have traditionally thought about “POS.”</p>
+
+  <p>Previously, our mental model of the POS was the cash register. Even though it was computerized, POS was still a singular, monolithic piece of tech. It handled payments, but we also used it for labor and the time clock. It had marketing features and a set of canned reports. It represented a single black box with inputs and outputs.</p>
+
+  <p>In leading retail environments, POS is the stable transaction core—handling payments and basic accounting, and changing infrequently. On top of that sits a more agile layer: order orchestration across registers, kiosks, mobile apps, and e-commerce. Above that is the experience and intelligence layer—loyalty, personalization, AI-driven recommendations, and operational analytics.</p>
+
+  <p>By separating these layers, retailers can innovate rapidly without disrupting the foundation.</p>
+
+  <p>This model is beginning to emerge in car washing as well. Enterprise operators are pulling data into data warehouses, connecting systems, and looking beyond the limitations of a single platform. Data is no longer confined to the register—it comes from CRM, cameras, marketing systems, payroll tools, equipment, and more.</p>
+
+  <p style="font-family:'Newsreader',serif;font-size:clamp(1.4rem,2.4vw,1.85rem);line-height:1.2;color:#1B1916;margin:0.4em 0 1.1em">POS is no longer the center. <span style="color:#1F6B6B">It’s part of a broader ecosystem.</span></p>
+
+  <div style="display:flex;align-items:center;gap:16px;margin:clamp(40px,5vw,60px) 0">
+    <span style="flex:1;height:1px;background:rgba(27,25,22,0.2)"></span>
+    <span style="width:7px;height:7px;background:#1F6B6B;transform:rotate(45deg);display:inline-block"></span>
+    <span style="flex:1;height:1px;background:rgba(27,25,22,0.2)"></span>
+  </div>
+
+  <p>I thought back to hearing that line at the ROADMAP event—the one that made me sit up and think about whether we were still behind. It was said by Jose Costa, who was at the time the CEO of Whistle Express (he has since transitioned to board member).</p>
+
+  <p>I called him a few days after the event and asked him what he meant. His concerns were about:</p>
+
+  <ul style="list-style:none;margin:0 0 1.45em;padding:0;display:flex;flex-direction:column;gap:13px">
+    <li style="display:flex;gap:13px;font-size:clamp(1.08rem,1.4vw,1.2rem);line-height:1.6;color:#2a2722"><span style="color:#1F6B6B;font-family:'IBM Plex Mono',monospace;flex:none">—</span>Pay stations that felt dated and hard to replace.</li>
+    <li style="display:flex;gap:13px;font-size:clamp(1.08rem,1.4vw,1.2rem);line-height:1.6;color:#2a2722"><span style="color:#1F6B6B;font-family:'IBM Plex Mono',monospace;flex:none">—</span>Acquired sites running multiple POS systems that were difficult to consolidate.</li>
+    <li style="display:flex;gap:13px;font-size:clamp(1.08rem,1.4vw,1.2rem);line-height:1.6;color:#2a2722"><span style="color:#1F6B6B;font-family:'IBM Plex Mono',monospace;flex:none">—</span>A desire to deliver a customer experience that uses available data—but an inability to unlock it consistently.</li>
+  </ul>
+
+  <p>That is not one problem. That is all three frictions interacting at once. It feels like being behind. But it is really the discomfort of transition.</p>
+
+  <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(1.6rem,2.8vw,2.2rem);line-height:1.12;letter-spacing:-0.01em;margin:clamp(44px,5vw,64px) 0 6px">The Bottom Line</h2>
+  <div style="width:38px;height:3px;background:#1F6B6B;margin:0 0 24px"></div>
+
+  <p>Industries don’t feel behind because they lack innovation. They feel behind when identity shifts faster than mindset. Maybe it’s just the weariness of travel—of coming so far, so fast. Feeling behind might just be the emotional proof of our transformation.</p>
+
+  <p>The reality is that we may always feel this way—that’s the point. The digital-first mindset never stops evolving. But that is ok. Not because we’ve arrived, but because we become more familiar with the journey.</p>
+
+  <p>When we do, just don’t get too comfortable—we leave first thing in the morning.</p>
+
+</div>
+</article>
+
+<!-- AUTHOR / CTA -->
+<section style="background:#1B1916;color:#F4F1E9">
+  <div style="max-width:760px;margin:0 auto;padding:clamp(48px,6vw,80px) clamp(20px,5vw,40px)">
+    <div style="display:flex;flex-wrap:wrap;gap:24px;align-items:center">
+      <div style="width:72px;height:72px;border-radius:50%;overflow:hidden;background:#F4F1E9;flex:none">
+        <img src="images/kyle-doyle.jpg" alt="Kyle Doyle" style="width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(1) contrast(1.08)">
+      </div>
+      <div style="flex:1 1 300px;min-width:240px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:0.66rem;letter-spacing:0.18em;text-transform:uppercase;color:#5AA39D;display:block;margin-bottom:8px">Written by</span>
+        <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:1.6rem;line-height:1.1;margin:0 0 8px">Kyle Doyle</h3>
+        <p style="font-size:0.98rem;line-height:1.6;color:#cbc6bc;margin:0;max-width:46ch">Founder of IgniteDrive Labs — independent technology and product strategy for car wash operators and suppliers.</p>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:clamp(32px,4vw,44px)">
+      <a href="index.html#contact" style="font-size:0.98rem;font-weight:500;background:#1F6B6B;color:#F4F1E9;padding:15px 26px" style-hover="background:#5AA39D">Start a Conversation</a>
+      <a href="index.html#insights" style="font-size:0.98rem;font-weight:500;color:#F4F1E9;padding:15px 8px;border-bottom:1px solid rgba(244,241,233,0.4)" style-hover="border-bottom:1px solid #5AA39D;color:#5AA39D">More Field Notes&nbsp;→</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#14120F;color:#F4F1E9">
+  <div style="max-width:1240px;margin:0 auto;padding:clamp(32px,4vw,48px) clamp(20px,5vw,64px);display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:center">
+    <a href="index.html"><img src="images/ignitedrive-labs-logo-wide.png" alt="IgniteDrive Labs" style="height:24px;width:auto;display:block;filter:brightness(0) invert(1);opacity:0.9"></a>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:#7a7468">© {{ year }} IgniteDrive Labs · Field Notes</span>
+  </div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return { year: new Date().getFullYear() };
+  }
+}
+</script>
+</body>
+</html>

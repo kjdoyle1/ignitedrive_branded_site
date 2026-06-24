@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:#F4F1E9;color:#1B1916;font-family:'IBM Plex Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+::selection{background:#1F6B6B;color:#F4F1E9}
+.body p{font-size:clamp(1.08rem,1.4vw,1.2rem);line-height:1.72;color:#2a2722;margin:0 0 1.45em;text-wrap:pretty}
+.body p a{color:#1F6B6B;border-bottom:1px solid rgba(31,107,107,0.4)}
+@media (max-width:600px){.nav-links{display:none !important}}
+</style>
+</helmet>
+
+<div style="overflow-x:hidden">
+
+<!-- NAV -->
+<header style="position:sticky;top:0;z-index:50;background:rgba(244,241,233,0.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(27,25,22,0.14)">
+  <div style="max-width:1240px;margin:0 auto;padding:13px clamp(20px,5vw,64px);display:flex;align-items:center;justify-content:space-between;gap:20px">
+    <a href="index.html" style="display:flex;align-items:center;flex-shrink:0">
+      <img src="images/ignitedrive-labs-logo-wide.png" alt="IgniteDrive Labs" style="height:28px;width:auto;display:block">
+    </a>
+    <nav style="display:flex;align-items:center;gap:clamp(14px,2.4vw,30px)">
+      <span class="nav-links"><a href="index.html#insights" style="font-size:0.9rem;font-weight:500;color:#43403a;padding:4px 0;border-bottom:1px solid transparent" style-hover="color:#1F6B6B;border-bottom:1px solid #1F6B6B">All Insights</a></span>
+      <a href="index.html#contact" style="font-size:0.88rem;font-weight:500;background:#1B1916;color:#F4F1E9;padding:9px 17px;white-space:nowrap" style-hover="background:#1F6B6B">Start a Conversation</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ARTICLE HEADER -->
+<article>
+<div style="max-width:760px;margin:0 auto;padding:clamp(40px,6vw,80px) clamp(20px,5vw,40px) clamp(28px,4vw,44px)">
+  <a href="index.html#insights" style="display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:#3A7A74;margin-bottom:clamp(28px,4vw,44px)" style-hover="color:#1F6B6B">←&nbsp;&nbsp;Field Notes</a>
+  <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:0.7rem;letter-spacing:0.16em;text-transform:uppercase;color:#8a8478;margin-bottom:22px">
+    <span style="color:#1F6B6B">Field Note</span>
+    <span style="width:4px;height:4px;background:#c9bfae;transform:rotate(45deg);display:inline-block"></span>
+    <span>Feb 2025</span>
+    <span style="width:4px;height:4px;background:#c9bfae;transform:rotate(45deg);display:inline-block"></span>
+    <span>8 min read</span>
+  </div>
+  <h1 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(2.2rem,4.6vw,3.6rem);line-height:1.06;letter-spacing:-0.018em;margin:0 0 22px;text-wrap:balance">Sales Performance Is a System Problem—Not a Talent Problem</h1>
+  <p style="font-family:'Newsreader',serif;font-style:italic;font-size:clamp(1.25rem,2vw,1.6rem);line-height:1.35;color:#4a453c;margin:0 0 30px;max-width:40ch;text-wrap:pretty">What hundreds of locations reveal: the best teams aren’t better at selling — they’re better at running a system.</p>
+  <div style="display:flex;align-items:center;gap:13px;padding-top:24px;border-top:1px solid rgba(27,25,22,0.16)">
+    <div style="width:42px;height:42px;border-radius:50%;overflow:hidden;background:#1B1916;flex:none">
+      <img src="images/kyle-doyle.jpg" alt="Kyle Doyle" style="width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(1) contrast(1.08)">
+    </div>
+    <div style="display:flex;flex-direction:column;gap:2px">
+      <span style="font-size:0.96rem;font-weight:600;color:#1B1916">Kyle Doyle</span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:#8a8478">Founder, IgniteDrive Labs</span>
+    </div>
+  </div>
+</div>
+
+<!-- LEAD IMAGE -->
+<div style="max-width:980px;margin:0 auto clamp(36px,5vw,56px);padding:0 clamp(20px,5vw,40px)">
+  <div style="position:relative;border:1px solid #1B1916;aspect-ratio:3/2;overflow:hidden;background:#FCFBF7">
+    <img src="images/sales-system-diagram.png" alt="A diagram of four connected rings of people, linked by arrows into a continuous loop" style="width:100%;height:100%;object-fit:contain;padding:clamp(14px,3vw,32px)">
+    <span style="position:absolute;top:14px;left:14px;font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.1em;color:#6e675c;background:rgba(244,241,233,0.72);padding:3px 6px">FIG. 01</span>
+    <span style="position:absolute;bottom:14px;left:14px;font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.06em;text-transform:uppercase;background:#1B1916;color:#F4F1E9;padding:6px 9px">diagram — the system, in motion</span>
+  </div>
+</div>
+
+<!-- BODY -->
+<div class="body" style="max-width:680px;margin:0 auto;padding:0 clamp(20px,5vw,40px) clamp(48px,6vw,80px)">
+
+  <p>I was inside the lobby of a recently built Express Exterior location. The trainer for this 50-something-location group was outside working with salespeople, so I figured I had a few minutes to take a break from the Southeast humidity and soak up some AC.</p>
+
+  <p>As I looked around, I saw they had set up a charging station for their Salespath tablets in a little nook. But what stood out was an 8.5×11 piece of paper pinned to the wall above it. It read “Site Manager Weekly Goals.” On it were goals, daily data, and some handwritten notes.</p>
+
+  <p style="font-family:'Newsreader',serif;font-size:clamp(1.4rem,2.4vw,1.85rem);line-height:1.2;color:#1B1916;margin:0.4em 0 1.1em">That little piece of paper was impressive.</p>
+
+  <p>When I visit clients, I’m there to help them roll out their sales strategy—but I’m also there to get a sense of their systems. I look in lobbies. I look in managers’ offices and in backrooms. In these semi-hidden places, you see how mature an organization is, and what I find tells me where and how I’ll need to assist.</p>
+
+  <p>When I visited more of their locations during that trip, I found the same version of that sheet pinned at each one, all of them up to date. When you operate at scale, executing that is harder than you think. That paper was a symbol of the system behind it.</p>
+
+  <p>That group has been one of the most successful I’ve seen at increasing conversion rate—and that goes beyond just using Salespath. What I’ve found, visiting dozens of clients and hundreds of locations, is that the most successful groups realize high performance is about more than tools. It’s about more than talent. It’s about systems. And when you have those systems, they become force multipliers for any tools or talent you layer on top.</p>
+
+  <p>One popular myth I hear is that sales performance is a people problem. <em>If only we had better salespeople. More motivated teams. Stronger closers. More people like our all-star Mary over at location X.</em></p>
+
+  <p>But after listening to millions of real sales conversations (via AI, of course) and visiting locations all across the country, a different pattern emerges. The best-performing teams aren’t better at selling. They’re better at running a sales system.</p>
+
+  <p>It’s important to realize what’s at stake. On the surface, small improvements in conversion don’t feel meaningful—a percentage point here or there seems to blend into seasonal and weekly variability. But over time, they compound.</p>
+
+  <blockquote style="margin:clamp(36px,5vw,52px) 0;padding:4px 0 4px clamp(20px,3vw,30px);border-left:3px solid #1F6B6B">
+    <p style="font-family:'Newsreader',serif;font-style:italic;font-weight:500;font-size:clamp(1.5rem,2.8vw,2.1rem);line-height:1.28;color:#1B1916;margin:0;text-wrap:pretty">The best teams aren’t better at selling—they’re better at running a system.</p>
+  </blockquote>
+
+  <p>Here are the numbers. Rinsed analyzed data across more than 3,000 locations and found a simple dynamic: the average retail customer spends around $100 per year, while a member spends closer to $400. That gap compounds quickly. Even a one-point increase in conversion—whether from 4% to 5% or 15% to 16%—can generate significant revenue.</p>
+
+  <div style="background:#1B1916;color:#F4F1E9;padding:clamp(26px,3.5vw,40px);margin:clamp(36px,5vw,52px) 0">
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:0.66rem;letter-spacing:0.18em;text-transform:uppercase;color:#5AA39D;display:block;margin-bottom:14px">What one point is worth</span>
+    <p style="font-family:'Newsreader',serif;font-size:clamp(1.3rem,2.4vw,1.85rem);line-height:1.3;margin:0;color:#F4F1E9">At ~2,000 retail cars per month, a single point of conversion is about <span style="color:#5AA39D">$100,000 in additional revenue per location.</span></p>
+  </div>
+
+  <p>The opportunity is real—which makes the gap between average and high-performing teams even more important.</p>
+
+  <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(1.6rem,2.8vw,2.2rem);line-height:1.12;letter-spacing:-0.01em;margin:clamp(44px,5vw,64px) 0 6px">We Build Around “Coverage”—Not Conversion</h2>
+  <div style="width:38px;height:3px;background:#1F6B6B;margin:0 0 24px"></div>
+
+  <p>When operators look at performance, they often focus on conversion rate: how many customers converted from retail to membership. But there’s a more fundamental question underneath it: how many customers even <em>heard</em> the offer?</p>
+
+  <p>In most locations, the biggest issue isn’t that customers are saying no. It’s that the membership conversation never happened—either because the customer used a pay station unattended, or because the salesperson reverted to a sub-optimal pitch (“Do you know which wash you want?”).</p>
+
+  <p>The entire sales system we create is built around one simple goal: give every single customer a consistent membership pitch. It doesn’t have to be pushy, as we’ll discuss—but the whole system is built around that one idea.</p>
+
+  <p>As I visited group after group, a pattern emerged about what made the top performers the top performers.</p>
+
+  <p>First, there was a clear difference in how they viewed the pitch. It wasn’t open-ended or left to chance. It was structured, documented, and consistent.</p>
+
+  <blockquote style="margin:clamp(36px,5vw,52px) 0;padding:4px 0 4px clamp(20px,3vw,30px);border-left:3px solid #1F6B6B">
+    <p style="font-family:'Newsreader',serif;font-style:italic;font-weight:500;font-size:clamp(1.4rem,2.6vw,1.95rem);line-height:1.3;color:#1B1916;margin:0 0 8px;text-wrap:pretty">Small, smart choices + consistency + time = radical difference.</p>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:0.74rem;letter-spacing:0.06em;color:#8a8478">— Darren Hardy</span>
+  </blockquote>
+
+  <p>Where lower-performing teams struggle most is in how they communicate value. Too often they default to features: “Our top package has ceramic,” or “this one includes hot wax and tire shine.” Those are inclusions, not benefits—and customers buy benefits. Higher performers translate those into outcomes: protection that lasts longer, or the look of jet-black tires in the driveway.</p>
+
+  <p>Another insight is the power of validation. After a customer makes a selection, something as simple as “Great choice” or “You’re going to love that” consistently improves outcomes.</p>
+
+  <p>And finally, high performers are disciplined about making the membership offer. Nothing complicated—just clearly stating the value. Not inclusions, but benefits: “Our customers love being able to wash whenever they want.”</p>
+
+  <p>High performers also build prescribed routines that enable memorization. I’ve seen teams rehearse in short, daily sessions—running through the pitch, handling objections, then repeating it clean. Five minutes a day that compounds into real revenue.</p>
+
+  <p>The second part of the pattern was coaching. Most teams have some version of a script. The difference is whether it’s actually being used—and whether we catch it quickly when salespeople start to revert to bad habits.</p>
+
+  <p>That’s where coaching comes in. In high-performing operations, site managers are actively coaching every day—not with vague feedback, but with specific observations based on real interactions and the documented pitch. Ideally you have Salespath (wink) so you can hear every presentation, but if not, you need another way to overhear what’s being said. In the end this is about muscle memory: the more we reinforce good habits and bring them back to baseline quickly, the faster we get results.</p>
+
+  <p>The third part of the pattern was how the best teams make sales part of the weekly rhythm of the business. Performance is reviewed in a weekly meeting—site managers with their regional manager, or an owner, executive, or manager at HQ. Conversations are reviewed. Wins are shared. Misses are corrected. Coaching activity is quantified. Not occasionally—every week. That creates accountability, but more importantly, visibility. You’re no longer guessing how your team is performing. You can see it.</p>
+
+  <p>Finally, leadership truly matters. You can have a script, tools, and even good people, but without leadership commitment, none of it sticks. I’ve seen this over and over. The system only works if it’s consistently reinforced and woven into the culture.</p>
+
+  <blockquote style="margin:clamp(36px,5vw,52px) 0;padding:4px 0 4px clamp(20px,3vw,30px);border-left:3px solid #1F6B6B">
+    <p style="font-family:'Newsreader',serif;font-style:italic;font-weight:500;font-size:clamp(1.32rem,2.4vw,1.8rem);line-height:1.32;color:#1B1916;margin:0 0 8px;text-wrap:pretty">“To truly transform the results and health of an entire sales team, the leader and the culture must be transformed.”</p>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:0.74rem;letter-spacing:0.06em;color:#8a8478">— Mike Weinberg</span>
+  </blockquote>
+
+  <p>That piece of paper on the wall didn’t get there by accident. It got there because a leader stepped up and said sales were going to be a critical part of their strategy—that despite the daily grind, they were going to keep the system in place. Procedures were put in place. Checks and balances were instituted. Later I found out the CEO would personally check that piece of paper whenever he stopped by a site.</p>
+
+  <p>When you look at it this way, sales performance stops being a mystery. It becomes a tangible system—one that can be explained, implemented, diagnosed, and improved:</p>
+
+  <div style="display:flex;flex-direction:column;margin:clamp(28px,4vw,40px) 0">
+    <div style="display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-top:1px solid rgba(27,25,22,0.18)"><span style="font-family:'IBM Plex Mono',monospace;font-size:0.8rem;color:#1F6B6B;flex:none;width:26px">01</span><span style="font-size:clamp(1.02rem,1.4vw,1.14rem);line-height:1.5;color:#1B1916">Design and align on a <strong style="font-weight:600">documented pitch.</strong></span></div>
+    <div style="display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-top:1px solid rgba(27,25,22,0.18)"><span style="font-family:'IBM Plex Mono',monospace;font-size:0.8rem;color:#1F6B6B;flex:none;width:26px">02</span><span style="font-size:clamp(1.02rem,1.4vw,1.14rem);line-height:1.5;color:#1B1916">Build a process for <strong style="font-weight:600">rehearsals.</strong></span></div>
+    <div style="display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-top:1px solid rgba(27,25,22,0.18)"><span style="font-family:'IBM Plex Mono',monospace;font-size:0.8rem;color:#1F6B6B;flex:none;width:26px">03</span><span style="font-size:clamp(1.02rem,1.4vw,1.14rem);line-height:1.5;color:#1B1916">Have site managers <strong style="font-weight:600">coach daily.</strong></span></div>
+    <div style="display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-top:1px solid rgba(27,25,22,0.18)"><span style="font-family:'IBM Plex Mono',monospace;font-size:0.8rem;color:#1F6B6B;flex:none;width:26px">04</span><span style="font-size:clamp(1.02rem,1.4vw,1.14rem);line-height:1.5;color:#1B1916">Run a <strong style="font-weight:600">weekly review</strong> of sales and coaching activity.</span></div>
+    <div style="display:flex;gap:16px;align-items:flex-start;padding:16px 0;border-top:1px solid rgba(27,25,22,0.18);border-bottom:1px solid rgba(27,25,22,0.18)"><span style="font-family:'IBM Plex Mono',monospace;font-size:0.8rem;color:#1F6B6B;flex:none;width:26px">05</span><span style="font-size:clamp(1.02rem,1.4vw,1.14rem);line-height:1.5;color:#1B1916">Have an <strong style="font-weight:600">engaged leader</strong> reinforcing it at the top.</span></div>
+  </div>
+
+  <p>You define the pitch. You rehearse it. You coach it daily. You review it weekly. And leadership reinforces it. When the system is in place, performance becomes predictable—not perfect, but consistent. And in a business where small improvements compound over time, consistency is what drives results.</p>
+
+  <p style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(1.4rem,2.6vw,1.95rem);line-height:1.2;color:#1B1916;margin:0.5em 0 0.2em">Sales performance isn’t a talent problem.</p>
+  <p style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(1.4rem,2.6vw,1.95rem);line-height:1.2;color:#1F6B6B;margin:0">It’s a systems problem.</p>
+
+</div>
+</article>
+
+<!-- AUTHOR / CTA -->
+<section style="background:#1B1916;color:#F4F1E9">
+  <div style="max-width:760px;margin:0 auto;padding:clamp(48px,6vw,80px) clamp(20px,5vw,40px)">
+    <div style="display:flex;flex-wrap:wrap;gap:24px;align-items:center">
+      <div style="width:72px;height:72px;border-radius:50%;overflow:hidden;background:#F4F1E9;flex:none">
+        <img src="images/kyle-doyle.jpg" alt="Kyle Doyle" style="width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(1) contrast(1.08)">
+      </div>
+      <div style="flex:1 1 300px;min-width:240px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:0.66rem;letter-spacing:0.18em;text-transform:uppercase;color:#5AA39D;display:block;margin-bottom:8px">Written by</span>
+        <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:1.6rem;line-height:1.1;margin:0 0 8px">Kyle Doyle</h3>
+        <p style="font-size:0.98rem;line-height:1.6;color:#cbc6bc;margin:0;max-width:46ch">Founder of IgniteDrive Labs — independent technology and product strategy for car wash operators and suppliers.</p>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:clamp(32px,4vw,44px)">
+      <a href="index.html#contact" style="font-size:0.98rem;font-weight:500;background:#1F6B6B;color:#F4F1E9;padding:15px 26px" style-hover="background:#5AA39D">Start a Conversation</a>
+      <a href="index.html#insights" style="font-size:0.98rem;font-weight:500;color:#F4F1E9;padding:15px 8px;border-bottom:1px solid rgba(244,241,233,0.4)" style-hover="border-bottom:1px solid #5AA39D;color:#5AA39D">More Field Notes&nbsp;→</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#14120F;color:#F4F1E9">
+  <div style="max-width:1240px;margin:0 auto;padding:clamp(32px,4vw,48px) clamp(20px,5vw,64px);display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:center">
+    <a href="index.html"><img src="images/ignitedrive-labs-logo-wide.png" alt="IgniteDrive Labs" style="height:24px;width:auto;display:block;filter:brightness(0) invert(1);opacity:0.9"></a>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:#7a7468">© {{ year }} IgniteDrive Labs · Field Notes</span>
+  </div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return { year: new Date().getFullYear() };
+  }
+}
+</script>
+</body>
+</html>

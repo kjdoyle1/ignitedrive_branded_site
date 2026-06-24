@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<div style="{{ boxStyle }}">
+  <sc-for list="{{ blades }}" as="b" hint-placeholder-count="12">
+    <span style="{{ b.style }}"></span>
+  </sc-for>
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{
+  &quot;$preview&quot;: {&quot;width&quot;: 120, &quot;height&quot;: 120},
+  &quot;size&quot;: {&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:64,&quot;tsType&quot;:&quot;number&quot;},
+  &quot;color&quot;: {&quot;editor&quot;:&quot;color&quot;,&quot;default&quot;:&quot;#B0552F&quot;,&quot;tsType&quot;:&quot;string&quot;},
+  &quot;count&quot;: {&quot;editor&quot;:&quot;int&quot;,&quot;default&quot;:12,&quot;tsType&quot;:&quot;number&quot;},
+  &quot;tilt&quot;: {&quot;editor&quot;:&quot;float&quot;,&quot;default&quot;:26,&quot;tsType&quot;:&quot;number&quot;}
+}">
+class Component extends DCLogic {
+  renderVals() {
+    const size = Number(this.props.size ?? 64);
+    const color = this.props.color ?? '#B0552F';
+    const count = Number(this.props.count ?? 12);
+    const tilt = Number(this.props.tilt ?? 26);
+    const dashW = Math.max(2, size * 0.062);
+    const dashH = size * 0.22;
+    const radius = size * 0.30;
+    const blades = [];
+    for (let i = 0; i < count; i++) {
+      const angle = i * (360 / count);
+      blades.push({
+        key: i,
+        style: {
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          width: dashW + 'px',
+          height: dashH + 'px',
+          marginLeft: (-dashW / 2) + 'px',
+          marginTop: (-dashH / 2) + 'px',
+          background: color,
+          borderRadius: dashW + 'px',
+          transform: `rotate(${angle}deg) translateY(${-radius}px) rotate(${tilt}deg)`,
+        },
+      });
+    }
+    return {
+      boxStyle: { position: 'relative', width: size + 'px', height: size + 'px', flex: 'none', display: 'block' },
+      blades,
+    };
+  }
+}
+</script>
+</body>
+</html>

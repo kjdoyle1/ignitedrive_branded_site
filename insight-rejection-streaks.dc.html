@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box}
+html,body{margin:0}
+body{background:#F4F1E9;color:#1B1916;font-family:'IBM Plex Sans',system-ui,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+::selection{background:#1F6B6B;color:#F4F1E9}
+.body p{font-size:clamp(1.08rem,1.4vw,1.2rem);line-height:1.72;color:#2a2722;margin:0 0 1.45em;text-wrap:pretty}
+.body p a{color:#1F6B6B;border-bottom:1px solid rgba(31,107,107,0.4)}
+@media (max-width:600px){.nav-links{display:none !important}}
+</style>
+</helmet>
+
+<div style="overflow-x:hidden">
+
+<!-- NAV -->
+<header style="position:sticky;top:0;z-index:50;background:rgba(244,241,233,0.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(27,25,22,0.14)">
+  <div style="max-width:1240px;margin:0 auto;padding:13px clamp(20px,5vw,64px);display:flex;align-items:center;justify-content:space-between;gap:20px">
+    <a href="index.html" style="display:flex;align-items:center;flex-shrink:0">
+      <img src="images/ignitedrive-labs-logo-wide.png" alt="IgniteDrive Labs" style="height:28px;width:auto;display:block">
+    </a>
+    <nav style="display:flex;align-items:center;gap:clamp(14px,2.4vw,30px)">
+      <span class="nav-links"><a href="index.html#insights" style="font-size:0.9rem;font-weight:500;color:#43403a;padding:4px 0;border-bottom:1px solid transparent" style-hover="color:#1F6B6B;border-bottom:1px solid #1F6B6B">All Insights</a></span>
+      <a href="index.html#contact" style="font-size:0.88rem;font-weight:500;background:#1B1916;color:#F4F1E9;padding:9px 17px;white-space:nowrap" style-hover="background:#1F6B6B">Start a Conversation</a>
+    </nav>
+  </div>
+</header>
+
+<!-- ARTICLE HEADER -->
+<article>
+<div style="max-width:760px;margin:0 auto;padding:clamp(40px,6vw,80px) clamp(20px,5vw,40px) clamp(28px,4vw,44px)">
+  <a href="index.html#insights" style="display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:#3A7A74;margin-bottom:clamp(28px,4vw,44px)" style-hover="color:#1F6B6B">←&nbsp;&nbsp;Field Notes</a>
+  <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:0.7rem;letter-spacing:0.16em;text-transform:uppercase;color:#8a8478;margin-bottom:22px">
+    <span style="color:#1F6B6B">Data Study</span>
+    <span style="width:4px;height:4px;background:#c9bfae;transform:rotate(45deg);display:inline-block"></span>
+    <span>Feb 2025</span>
+    <span style="width:4px;height:4px;background:#c9bfae;transform:rotate(45deg);display:inline-block"></span>
+    <span>5 min read</span>
+  </div>
+  <h1 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(2.2rem,4.6vw,3.6rem);line-height:1.06;letter-spacing:-0.018em;margin:0 0 22px;text-wrap:balance">Do Rejection Streaks Hurt Individual Sales Performance? What the Data Says</h1>
+  <p style="font-family:'Newsreader',serif;font-style:italic;font-size:clamp(1.25rem,2vw,1.6rem);line-height:1.35;color:#4a453c;margin:0 0 30px;max-width:38ch;text-wrap:pretty">What 900,000 car wash sales presentations suggest about rejection fatigue, momentum, and where coaching actually works.</p>
+  <div style="display:flex;align-items:center;gap:13px;padding-top:24px;border-top:1px solid rgba(27,25,22,0.16)">
+    <div style="width:42px;height:42px;border-radius:50%;overflow:hidden;background:#1B1916;flex:none">
+      <img src="images/kyle-doyle.jpg" alt="Kyle Doyle" style="width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(1) contrast(1.08)">
+    </div>
+    <div style="display:flex;flex-direction:column;gap:2px">
+      <span style="font-size:0.96rem;font-weight:600;color:#1B1916">Kyle Doyle</span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:#8a8478">Founder, IgniteDrive Labs</span>
+    </div>
+  </div>
+</div>
+
+<!-- LEAD IMAGE -->
+<div style="max-width:980px;margin:0 auto clamp(28px,4vw,40px);padding:0 clamp(20px,5vw,40px)">
+  <div style="position:relative;border:1px solid #1B1916;aspect-ratio:16/9;overflow:hidden;background:#1B1916">
+    <img src="images/rejection-thumbs-down.png" alt="A man giving a thumbs-down against a colorful geometric wall" style="width:100%;height:100%;object-fit:cover;object-position:center;filter:grayscale(1) contrast(1.06)">
+    <span style="position:absolute;top:14px;left:14px;font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.1em;color:#F4F1E9;background:rgba(27,25,22,0.55);padding:3px 6px">FIG. 01</span>
+    <span style="position:absolute;bottom:14px;left:14px;font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.06em;text-transform:uppercase;background:#1B1916;color:#F4F1E9;padding:6px 9px">the rejection we brace for</span>
+  </div>
+</div>
+
+<!-- DATA STRIP -->
+<div style="max-width:760px;margin:0 auto clamp(36px,5vw,52px);padding:0 clamp(20px,5vw,40px)">
+  <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:1px;background:rgba(27,25,22,0.18);border:1px solid rgba(27,25,22,0.18)">
+    <div style="background:#F4F1E9;padding:22px 20px">
+      <div style="font-family:'Newsreader',serif;font-size:clamp(1.7rem,3vw,2.3rem);line-height:1;color:#1B1916">900K</div>
+      <div style="font-size:0.84rem;line-height:1.4;color:#5a544a;margin-top:8px">membership pitches analyzed</div>
+    </div>
+    <div style="background:#F4F1E9;padding:22px 20px">
+      <div style="font-family:'Newsreader',serif;font-size:clamp(1.7rem,3vw,2.3rem);line-height:1;color:#1B1916">3,000+</div>
+      <div style="font-size:0.84rem;line-height:1.4;color:#5a544a;margin-top:8px">salespeople in the dataset</div>
+    </div>
+    <div style="background:#F4F1E9;padding:22px 20px">
+      <div style="font-family:'Newsreader',serif;font-size:clamp(1.7rem,3vw,2.3rem);line-height:1;color:#1F6B6B">+10%</div>
+      <div style="font-size:0.84rem;line-height:1.4;color:#5a544a;margin-top:8px">conversion lift right after a win</div>
+    </div>
+  </div>
+</div>
+
+<!-- BODY -->
+<div class="body" style="max-width:680px;margin:0 auto;padding:0 clamp(20px,5vw,40px) clamp(48px,6vw,80px)">
+
+  <p>You would think that if a salesperson goes through a string of rejections—let’s say ten in a row—their subsequent conversion rate would slip below their baseline. Let’s call it rejection fatigue. And if that’s the case, perhaps we should create some interventions when we see a salesperson dip into that pattern. So I decided to test it.</p>
+
+  <p>I looked at a dataset of 900,000 membership pitches from a little over 3,000 salespeople, measuring their conversion rate after a string of rejections. Initially, it seemed to prove true. If you chart conversion rate against the length of the rejection streak, the drop is clear. The longer the streak, the lower the conversion. By the time you get into deeper runs, performance looks dramatically worse than baseline.</p>
+
+  <p style="font-family:'Newsreader',serif;font-size:clamp(1.4rem,2.4vw,1.85rem);line-height:1.2;color:#1F6B6B;margin:0.4em 0 1.1em">But that’s not what’s actually happening.</p>
+
+  <p>What that view is capturing isn’t a single salesperson getting worse after a rejection streak. When I looked closer, lower-performing salespeople naturally accumulate longer streaks because they convert less often. Higher-performing salespeople reset their streaks more often. So as you move deeper into a streak, you’re increasingly looking at a <em>different group of people</em>—not the same person deteriorating.</p>
+
+  <p>When you control for that—when you compare each salesperson to their own baseline—the drop in conversion after a rejection streak disappears.</p>
+
+  <p>The same person at a streak of ten rejections performs about the same as they do at a streak of two. No meaningful degradation. Rejection fatigue is not supported in the data.</p>
+
+  <p>However, I did uncover a very real streak effect—but surprisingly, in the other direction.</p>
+
+  <p style="font-family:'Newsreader',serif;font-size:clamp(1.5rem,2.8vw,2.1rem);line-height:1.18;color:#1B1916;margin:0.5em 0 1em">Right after a conversion, performance improves.</p>
+
+  <p>In the two-to-three interactions after a conversion, the salesperson converts at 10% above their baseline. This wasn’t one or two outliers. It held across the entire data set of more than 3,000 salespeople.</p>
+
+  <blockquote style="margin:clamp(36px,5vw,52px) 0;padding:4px 0 4px clamp(20px,3vw,30px);border-left:3px solid #1F6B6B">
+    <p style="font-family:'Newsreader',serif;font-style:italic;font-weight:500;font-size:clamp(1.5rem,2.8vw,2.1rem);line-height:1.28;color:#1B1916;margin:0;text-wrap:pretty">The only consistent change in performance isn’t after failure. It’s after success.</p>
+  </blockquote>
+
+  <p>So let’s think about the real world. Say Mary’s conversion rate is typically 12%. There is a set of baseline behaviors that lead to that 12%—her training, her coaching, her people skills, her discipline, her desire to make more commission. When she faces a string of rejections, the data tells us those behaviors remain almost entirely intact.</p>
+
+  <p>The same applies to Joe, who has a baseline conversion rate of 5%. Joe’s set of behaviors also remains intact after a string of rejections.</p>
+
+  <p>But what’s fascinating is that both Mary and Joe get better after a successful conversion. Their behaviors change a bit and they rise above baseline. It makes perfect sense, and it reveals something about what goes into high performance. After a conversion, everyone feels just a little more confident. They’re in a slightly better mood. The energy is just a little higher.</p>
+
+  <p>The next customer or two feels that confidence, mood, and energy—and it leads to a higher likelihood of converting.</p>
+
+  <p>Joe’s underperformance isn’t a streak problem. It’s a baseline problem. And that requires a different intervention entirely.</p>
+
+  <div style="background:#1B1916;color:#F4F1E9;padding:clamp(26px,3.5vw,40px);margin:clamp(36px,5vw,52px) 0">
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:0.66rem;letter-spacing:0.18em;text-transform:uppercase;color:#5AA39D;display:block;margin-bottom:14px">What it’s worth</span>
+    <p style="font-family:'Newsreader',serif;font-size:clamp(1.3rem,2.4vw,1.85rem);line-height:1.3;margin:0;color:#F4F1E9">At actual membership lifetime value, that’s roughly <span style="color:#5AA39D">$80,000 in additional customer value per location</span>—from the same cars, the same team, one behavioral shift.</p>
+  </div>
+
+  <p>The takeaway is simple. I often talk about coaching as being part correction, part celebration. This finding emphasizes the celebration side. Ask yourself: what does your culture do to extend the energy of a win? The data shows exactly what happens when a salesperson feels confident, brings the energy, and carries it into the next interaction.</p>
+
+  <p style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(1.4rem,2.6vw,1.95rem);line-height:1.2;color:#1B1916;margin:0.5em 0 0.2em">The only consistent shift in behavior isn’t after failure.</p>
+  <p style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(1.4rem,2.6vw,1.95rem);line-height:1.2;color:#1F6B6B;margin:0">It’s after success.</p>
+
+</div>
+</article>
+
+<!-- AUTHOR / CTA -->
+<section style="background:#1B1916;color:#F4F1E9">
+  <div style="max-width:760px;margin:0 auto;padding:clamp(48px,6vw,80px) clamp(20px,5vw,40px)">
+    <div style="display:flex;flex-wrap:wrap;gap:24px;align-items:center">
+      <div style="width:72px;height:72px;border-radius:50%;overflow:hidden;background:#F4F1E9;flex:none">
+        <img src="images/kyle-doyle.jpg" alt="Kyle Doyle" style="width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(1) contrast(1.08)">
+      </div>
+      <div style="flex:1 1 300px;min-width:240px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:0.66rem;letter-spacing:0.18em;text-transform:uppercase;color:#5AA39D;display:block;margin-bottom:8px">Written by</span>
+        <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:1.6rem;line-height:1.1;margin:0 0 8px">Kyle Doyle</h3>
+        <p style="font-size:0.98rem;line-height:1.6;color:#cbc6bc;margin:0;max-width:46ch">Founder of IgniteDrive Labs — independent technology and product strategy for car wash operators and suppliers.</p>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:clamp(32px,4vw,44px)">
+      <a href="index.html#contact" style="font-size:0.98rem;font-weight:500;background:#1F6B6B;color:#F4F1E9;padding:15px 26px" style-hover="background:#5AA39D">Start a Conversation</a>
+      <a href="index.html#insights" style="font-size:0.98rem;font-weight:500;color:#F4F1E9;padding:15px 8px;border-bottom:1px solid rgba(244,241,233,0.4)" style-hover="border-bottom:1px solid #5AA39D;color:#5AA39D">More Field Notes&nbsp;→</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer style="background:#14120F;color:#F4F1E9">
+  <div style="max-width:1240px;margin:0 auto;padding:clamp(32px,4vw,48px) clamp(20px,5vw,64px);display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:center">
+    <a href="index.html"><img src="images/ignitedrive-labs-logo-wide.png" alt="IgniteDrive Labs" style="height:24px;width:auto;display:block;filter:brightness(0) invert(1);opacity:0.9"></a>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:#7a7468">© {{ year }} IgniteDrive Labs · Field Notes</span>
+  </div>
+</footer>
+
+</div>
+</x-dc>
+<script type="text/x-dc" data-dc-script>
+class Component extends DCLogic {
+  renderVals() {
+    return { year: new Date().getFullYear() };
+  }
+}
+</script>
+</body>
+</html>
