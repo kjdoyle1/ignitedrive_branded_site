@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Insights — Field Notes on Car Wash Technology &amp; Behavior | IgniteDrive Labs</title>
+<meta name="description" content="Field notes on technology, behavior, and car wash growth from IgniteDrive Labs.">
+<link rel="canonical" href="https://www.ignitedrivelabs.com/insights.html">
+<meta name="theme-color" content="#1A6B66">
+<link rel="icon" type="image/png" href="/icon.png">
+<link rel="apple-touch-icon" href="/icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="IgniteDrive Labs">
+<meta property="og:title" content="Insights — Field Notes on Car Wash Technology &amp; Behavior | IgniteDrive Labs">
+<meta property="og:description" content="Field notes on technology, behavior, and car wash growth from IgniteDrive Labs.">
+<meta property="og:image" content="https://www.ignitedrivelabs.com/icon.png">
+<meta property="og:url" content="https://www.ignitedrivelabs.com/insights.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Insights — Field Notes on Car Wash Technology &amp; Behavior | IgniteDrive Labs">
+<meta name="twitter:description" content="Field notes on technology, behavior, and car wash growth from IgniteDrive Labs.">
+<meta name="twitter:image" content="https://www.ignitedrivelabs.com/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header style="position:sticky;top:0;z-index:50;background:rgba(244,241,233,0.86);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(27,25,22,0.14)">
+  <div style="max-width:1240px;margin:0 auto;padding:15px clamp(20px,5vw,64px);display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap">
+    <a href="/" style="display:flex;align-items:center;flex-shrink:0">
+      <img src="/images/ignitedrive-labs-logo-wide.png" alt="IgniteDrive Labs" width="706" height="103" style="height:30px;width:auto;display:block">
+    </a>
+    <nav aria-label="Primary" style="display:flex;align-items:center;gap:clamp(16px,2.6vw,34px);flex-wrap:wrap">
+      <span class="nav-links" style="display:flex;align-items:center;gap:clamp(16px,2.6vw,32px);flex-wrap:wrap">
+        <a href="/#labs" class="link-hover-underline" style="font-size:0.92rem;font-weight:500;color:#43403a;padding:4px 0;border-bottom:1px solid transparent">Technology Lab</a>
+        <a href="/#labs" class="link-hover-underline" style="font-size:0.92rem;font-weight:500;color:#43403a;padding:4px 0;border-bottom:1px solid transparent">Behavior Lab</a>
+        <a href="/#field" class="link-hover-underline" style="font-size:0.92rem;font-weight:500;color:#43403a;padding:4px 0;border-bottom:1px solid transparent">Field-First</a>
+        <a href="/#loop" class="link-hover-underline" style="font-size:0.92rem;font-weight:500;color:#43403a;padding:4px 0;border-bottom:1px solid transparent">The Loop</a>
+        <a href="/insights.html" class="link-hover-underline" style="font-size:0.92rem;font-weight:500;color:#1F6B6B;padding:4px 0;border-bottom:1px solid #1F6B6B">Insights</a>
+        <a href="/#about" class="link-hover-underline" style="font-size:0.92rem;font-weight:500;color:#43403a;padding:4px 0;border-bottom:1px solid transparent">About</a>
+      </span>
+      <a href="/#contact" class="btn-ink" style="font-size:0.9rem;padding:10px 18px;white-space:nowrap">Start a conversation</a>
+      <button type="button" class="nav-toggle" data-nav-open aria-expanded="false" aria-controls="mobile-nav-panel" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M3 6h16M3 11h16M3 16h16" stroke="#1B1916" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<div class="nav-mobile-panel" id="mobile-nav-panel" data-nav-panel>
+  <div style="display:flex;justify-content:flex-end;padding-bottom:8px">
+    <button type="button" class="nav-toggle" data-nav-close aria-label="Close menu" style="display:flex">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M4 4l14 14M18 4L4 18" stroke="#1B1916" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <nav aria-label="Mobile">
+    <a href="/#labs">Technology Lab</a>
+    <a href="/#labs">Behavior Lab</a>
+    <a href="/#field">Field-First</a>
+    <a href="/#loop">The Loop</a>
+    <a href="/insights.html">Insights</a>
+    <a href="/#about">About</a>
+    <a href="/#contact" class="btn-ink" style="text-align:center;padding:14px">Start a conversation</a>
+  </nav>
+</div>
+
+<main id="main">
+
+<!-- ============ PAGE HEADER ============ -->
+<section style="background:#F4F1E9;border-bottom:1px solid rgba(27,25,22,0.16)">
+  <div style="max-width:1240px;margin:0 auto;padding:clamp(20px,3vw,28px) clamp(20px,5vw,64px) clamp(28px,3.5vw,44px)">
+    <a href="/" class="link-hover" style="display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:0.74rem;letter-spacing:0.04em;color:#5a544a;margin-bottom:clamp(20px,3vw,30px)">←&nbsp;IgniteDrive Labs</a>
+    <div style="display:flex;align-items:center;gap:12px;margin-bottom:clamp(14px,2vw,18px)">
+      <span class="diamond" style="width:8px;height:8px" aria-hidden="true"></span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:#3A7A74">Insights · Field notes</span>
+    </div>
+    <h1 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(2rem,3.4vw,2.9rem);line-height:1.06;letter-spacing:-0.018em;margin:0;max-width:24ch">Field notes on technology, behavior, and car wash growth.</h1>
+  </div>
+</section>
+
+<!-- ============ CATEGORY STRIP ============ -->
+<section style="background:#ECE7DB;border-top:1px solid rgba(27,25,22,0.16)">
+  <div style="max-width:1240px;margin:0 auto;padding:clamp(28px,3.4vw,40px) clamp(20px,5vw,64px);display:flex;flex-wrap:wrap;align-items:center;gap:14px 8px">
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.18em;text-transform:uppercase;color:#3A7A74;margin-right:6px">Topics</span>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:#1B1916;background:#FCFBF7;border:1px solid #1B1916;padding:6px 12px">Car Wash Tech Atlas</span>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:#43403a;border:1px solid rgba(27,25,22,0.24);padding:6px 12px">POS &amp; CRM</span>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:#43403a;border:1px solid rgba(27,25,22,0.24);padding:6px 12px">AI &amp; Data</span>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:#43403a;border:1px solid rgba(27,25,22,0.24);padding:6px 12px">Product Strategy</span>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:#43403a;border:1px solid rgba(27,25,22,0.24);padding:6px 12px">Membership Behavior</span>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:#43403a;border:1px solid rgba(27,25,22,0.24);padding:6px 12px">Customer Experience</span>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:#43403a;border:1px solid rgba(27,25,22,0.24);padding:6px 12px">Sales Systems</span>
+  </div>
+</section>
+
+<!-- ============ PUBLISHED ============ -->
+<section style="border-top:1px solid rgba(27,25,22,0.16)">
+  <div style="max-width:1240px;margin:0 auto;padding:clamp(40px,5vw,64px) clamp(20px,5vw,64px) clamp(56px,7vw,100px)">
+    <div style="display:flex;align-items:baseline;gap:14px;margin-bottom:clamp(28px,3.5vw,40px)">
+      <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(1.5rem,2.4vw,2rem);line-height:1.05;letter-spacing:-0.01em;margin:0">Published</h2>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:0.74rem;color:#5a544a">04 field notes</span>
+    </div>
+
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:24px">
+      <a href="/insight-membership-health-ltv.html" class="article-card-hover" style="background:#FCFBF7;border:1px solid #1B1916;display:flex;flex-direction:column">
+        <div style="position:relative;aspect-ratio:5/3;border-bottom:1px solid #1B1916;overflow:hidden;background:#1B1916">
+          <img src="/images/ltv-blood-pressure.webp" alt="A doctor watching cars enter a car wash, each tagged with a different LTV value" width="1280" height="720" style="width:100%;height:100%;object-fit:cover;object-position:center;filter:grayscale(1) contrast(1.06)">
+          <span style="position:absolute;top:12px;left:12px;font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.14em;text-transform:uppercase;background:#1F6B6B;color:#F4F1E9;padding:4px 8px">Data Study</span>
+          <span style="position:absolute;bottom:12px;left:12px;font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.1em;color:#F4F1E9;background:rgba(27,25,22,0.55);padding:3px 6px">FIG. 01</span>
+        </div>
+        <div style="padding:24px;display:flex;flex-direction:column;flex:1">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:0.64rem;letter-spacing:0.16em;text-transform:uppercase;color:#3A7A74">Membership economics · LTV</span>
+          <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:1.42rem;line-height:1.15;margin:10px 0 8px">Membership Health Is About LTV—But Not the Way We're Calculating It Today</h3>
+          <p style="font-size:0.96rem;line-height:1.55;color:#5a544a;margin:0 0 18px">One average LTV can hide two completely different businesses — the next edge is understanding why it moves.</p>
+          <span style="margin-top:auto;font-family:'IBM Plex Mono',monospace;font-size:0.68rem;letter-spacing:0.06em;color:#1F6B6B">7 min read &nbsp;·&nbsp; Read →</span>
+        </div>
+      </a>
+      <a href="/insight-car-wash-isnt-behind.html" class="article-card-hover" style="background:#FCFBF7;border:1px solid #1B1916;display:flex;flex-direction:column">
+        <div style="position:relative;aspect-ratio:5/3;border-bottom:1px solid #1B1916;overflow:hidden;background:#1B1916">
+          <img src="/images/nrf-show-floor.webp" alt="NRF retail-technology show floor at the Javits Center" width="1280" height="720" style="width:100%;height:100%;object-fit:cover;object-position:center;filter:grayscale(1) contrast(1.06)">
+          <span style="position:absolute;top:12px;left:12px;font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.14em;text-transform:uppercase;background:#1F6B6B;color:#F4F1E9;padding:4px 8px">Field Note</span>
+          <span style="position:absolute;bottom:12px;left:12px;font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.1em;color:#F4F1E9;background:rgba(27,25,22,0.55);padding:3px 6px">FIG. 01</span>
+        </div>
+        <div style="padding:24px;display:flex;flex-direction:column;flex:1">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:0.64rem;letter-spacing:0.16em;text-transform:uppercase;color:#3A7A74">POS &amp; technology landscape</span>
+          <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:1.42rem;line-height:1.15;margin:10px 0 8px">The Car Wash Industry Isn't Behind—We're Thinking About It Wrong</h3>
+          <p style="font-size:0.96rem;line-height:1.55;color:#5a544a;margin:0 0 18px">Why "ten years behind" misreads the moment — and the three frictions actually at play.</p>
+          <span style="margin-top:auto;font-family:'IBM Plex Mono',monospace;font-size:0.68rem;letter-spacing:0.06em;color:#1F6B6B">8 min read &nbsp;·&nbsp; Read →</span>
+        </div>
+      </a>
+      <a href="/insight-rejection-streaks.html" class="article-card-hover" style="background:#FCFBF7;border:1px solid #1B1916;display:flex;flex-direction:column">
+        <div style="position:relative;aspect-ratio:5/3;border-bottom:1px solid #1B1916;overflow:hidden;background:#1B1916">
+          <img src="/images/rejection-thumbs-down.webp" alt="A man giving a thumbs-down against a colorful geometric wall" width="1280" height="720" style="width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(1) contrast(1.06)">
+          <span style="position:absolute;top:12px;left:12px;font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.14em;text-transform:uppercase;background:#1F6B6B;color:#F4F1E9;padding:4px 8px">Data Study</span>
+          <span style="position:absolute;bottom:12px;left:12px;font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.1em;color:#F4F1E9;background:rgba(27,25,22,0.55);padding:3px 6px">FIG. 02</span>
+        </div>
+        <div style="padding:24px;display:flex;flex-direction:column;flex:1">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:0.64rem;letter-spacing:0.16em;text-transform:uppercase;color:#3A7A74">Membership behavior</span>
+          <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:1.42rem;line-height:1.15;margin:10px 0 8px">Do Rejection Streaks Hurt Sales Performance?</h3>
+          <p style="font-size:0.96rem;line-height:1.55;color:#5a544a;margin:0 0 18px">Rejection fatigue is a myth — the real streak effect runs the other way.</p>
+          <span style="margin-top:auto;font-family:'IBM Plex Mono',monospace;font-size:0.68rem;letter-spacing:0.06em;color:#1F6B6B">5 min read &nbsp;·&nbsp; Read →</span>
+        </div>
+      </a>
+      <a href="/insight-sales-system-problem.html" class="article-card-hover" style="background:#FCFBF7;border:1px solid #1B1916;display:flex;flex-direction:column">
+        <div style="position:relative;aspect-ratio:5/3;border-bottom:1px solid #1B1916;overflow:hidden;background:#FCFBF7">
+          <img src="/images/sales-system-diagram.webp" alt="Diagram of four connected rings of people linked into a loop" width="1536" height="1024" style="width:100%;height:100%;object-fit:cover;object-position:center;padding:10px">
+          <span style="position:absolute;top:12px;left:12px;font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.14em;text-transform:uppercase;background:#1F6B6B;color:#F4F1E9;padding:4px 8px">Field Note</span>
+          <span style="position:absolute;bottom:12px;left:12px;font-family:'IBM Plex Mono',monospace;font-size:0.58rem;letter-spacing:0.1em;color:#6e675c;background:rgba(244,241,233,0.72);padding:3px 6px">FIG. 03</span>
+        </div>
+        <div style="padding:24px;display:flex;flex-direction:column;flex:1">
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:0.64rem;letter-spacing:0.16em;text-transform:uppercase;color:#3A7A74">Sales systems</span>
+          <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:1.42rem;line-height:1.15;margin:10px 0 8px">Sales Performance Is a System Problem—Not a Talent Problem</h3>
+          <p style="font-size:0.96rem;line-height:1.55;color:#5a544a;margin:0 0 18px">The best teams aren't better at selling — they're better at running a system.</p>
+          <span style="margin-top:auto;font-family:'IBM Plex Mono',monospace;font-size:0.68rem;letter-spacing:0.06em;color:#1F6B6B">8 min read &nbsp;·&nbsp; Read →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section id="contact" style="background:#1F6B6B;color:#F4F1E9;border-top:1px solid rgba(27,25,22,0.16)">
+  <div style="max-width:1240px;margin:0 auto;padding:clamp(68px,9vw,124px) clamp(20px,5vw,64px)">
+    <div style="display:flex;flex-wrap:wrap;gap:clamp(40px,5vw,72px);align-items:flex-start">
+      <div style="flex:1 1 380px;min-width:300px">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:28px">
+          <span class="diamond" style="width:8px;height:8px;background:#F4F1E9" aria-hidden="true"></span>
+          <span style="font-family:'IBM Plex Mono',monospace;font-size:0.72rem;letter-spacing:0.2em;text-transform:uppercase;color:#CFE6E3">Start here</span>
+        </div>
+        <h2 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(2.2rem,4vw,3.4rem);line-height:1.05;letter-spacing:-0.018em;margin:0 0 22px;max-width:18ch">Have a question these field notes don't answer?</h2>
+        <p style="font-size:clamp(1.06rem,1.5vw,1.2rem);line-height:1.6;color:#E4F1EF;max-width:46ch;margin:0">Tell us what you're working through — technology, behavior, or the handoff between them. The first conversation is about understanding what's really going on.</p>
+      </div>
+      <div style="flex:1 1 440px;min-width:300px">
+        <div style="background:#FCFBF7;border:1px solid #1B1916;padding:clamp(26px,3vw,40px)" data-form-panel>
+          <form data-contact-form style="display:flex;flex-direction:column;gap:18px">
+            <div style="display:flex;flex-wrap:wrap;gap:18px">
+              <div style="flex:1 1 160px;min-width:140px;display:flex;flex-direction:column;gap:7px">
+                <label for="cf-name" style="font-family:'IBM Plex Mono',monospace;font-size:0.64rem;letter-spacing:0.16em;text-transform:uppercase;color:#3A7A74">Name</label>
+                <input id="cf-name" name="name" type="text" required style="width:100%;font-family:'IBM Plex Sans',sans-serif;font-size:0.98rem;color:#1B1916;background:#fff;border:1px solid rgba(27,25,22,0.28);padding:12px 13px;outline:none">
+              </div>
+              <div style="flex:1 1 160px;min-width:140px;display:flex;flex-direction:column;gap:7px">
+                <label for="cf-company" style="font-family:'IBM Plex Mono',monospace;font-size:0.64rem;letter-spacing:0.16em;text-transform:uppercase;color:#3A7A74">Company</label>
+                <input id="cf-company" name="company" type="text" style="width:100%;font-family:'IBM Plex Sans',sans-serif;font-size:0.98rem;color:#1B1916;background:#fff;border:1px solid rgba(27,25,22,0.28);padding:12px 13px;outline:none">
+              </div>
+            </div>
+            <div style="display:flex;flex-wrap:wrap;gap:18px">
+              <div style="flex:1 1 160px;min-width:140px;display:flex;flex-direction:column;gap:7px">
+                <label for="cf-email" style="font-family:'IBM Plex Mono',monospace;font-size:0.64rem;letter-spacing:0.16em;text-transform:uppercase;color:#3A7A74">Email</label>
+                <input id="cf-email" name="email" type="email" required style="width:100%;font-family:'IBM Plex Sans',sans-serif;font-size:0.98rem;color:#1B1916;background:#fff;border:1px solid rgba(27,25,22,0.28);padding:12px 13px;outline:none">
+              </div>
+              <div style="flex:1 1 160px;min-width:140px;display:flex;flex-direction:column;gap:7px">
+                <label for="cf-interest" style="font-family:'IBM Plex Mono',monospace;font-size:0.64rem;letter-spacing:0.16em;text-transform:uppercase;color:#3A7A74">I'm interested in…</label>
+                <select id="cf-interest" name="interest" style="width:100%;font-family:'IBM Plex Sans',sans-serif;font-size:0.98rem;color:#1B1916;background:#fff;border:1px solid rgba(27,25,22,0.28);padding:12px 13px;outline:none">
+                  <option>Technology / Product Systems</option>
+                  <option>Sales / CX / Behavior Systems</option>
+                  <option>Both</option>
+                  <option>Not sure yet</option>
+                </select>
+              </div>
+            </div>
+            <div style="display:flex;flex-direction:column;gap:7px">
+              <label for="cf-message" style="font-family:'IBM Plex Mono',monospace;font-size:0.64rem;letter-spacing:0.16em;text-transform:uppercase;color:#3A7A74">What would you like to improve?</label>
+              <textarea id="cf-message" name="message" rows="4" required style="width:100%;font-family:'IBM Plex Sans',sans-serif;font-size:0.98rem;line-height:1.5;color:#1B1916;background:#fff;border:1px solid rgba(27,25,22,0.28);padding:12px 13px;outline:none;resize:vertical"></textarea>
+            </div>
+            <div class="field-error" data-form-error style="display:none"></div>
+            <button type="submit" class="btn-ink" data-submit-btn style="font-size:1rem;padding:15px 26px;align-self:flex-start">Start a conversation</button>
+          </form>
+          <div data-form-confirm style="display:none">
+            <div style="display:flex;flex-direction:column;align-items:flex-start;gap:18px;padding:clamp(20px,3vw,40px) 0">
+              <span style="position:relative;width:40px;height:40px;flex:none;display:inline-block;vertical-align:middle" aria-hidden="true"><span style="position:absolute;top:50%;left:50%;width:2.48px;height:8.8px;margin-left:-1.24px;margin-top:-4.4px;background:#1F6B6B;border-radius:2.48px;transform:rotate(0deg) translateY(-12px) rotate(26deg)"></span><span style="position:absolute;top:50%;left:50%;width:2.48px;height:8.8px;margin-left:-1.24px;margin-top:-4.4px;background:#1F6B6B;border-radius:2.48px;transform:rotate(30deg) translateY(-12px) rotate(26deg)"></span><span style="position:absolute;top:50%;left:50%;width:2.48px;height:8.8px;margin-left:-1.24px;margin-top:-4.4px;background:#1F6B6B;border-radius:2.48px;transform:rotate(60deg) translateY(-12px) rotate(26deg)"></span><span style="position:absolute;top:50%;left:50%;width:2.48px;height:8.8px;margin-left:-1.24px;margin-top:-4.4px;background:#1F6B6B;border-radius:2.48px;transform:rotate(90deg) translateY(-12px) rotate(26deg)"></span><span style="position:absolute;top:50%;left:50%;width:2.48px;height:8.8px;margin-left:-1.24px;margin-top:-4.4px;background:#1F6B6B;border-radius:2.48px;transform:rotate(120deg) translateY(-12px) rotate(26deg)"></span><span style="position:absolute;top:50%;left:50%;width:2.48px;height:8.8px;margin-left:-1.24px;margin-top:-4.4px;background:#1F6B6B;border-radius:2.48px;transform:rotate(150deg) translateY(-12px) rotate(26deg)"></span><span style="position:absolute;top:50%;left:50%;width:2.48px;height:8.8px;margin-left:-1.24px;margin-top:-4.4px;background:#1F6B6B;border-radius:2.48px;transform:rotate(180deg) translateY(-12px) rotate(26deg)"></span><span style="position:absolute;top:50%;left:50%;width:2.48px;height:8.8px;margin-left:-1.24px;margin-top:-4.4px;background:#1F6B6B;border-radius:2.48px;transform:rotate(210deg) translateY(-12px) rotate(26deg)"></span><span style="position:absolute;top:50%;left:50%;width:2.48px;height:8.8px;margin-left:-1.24px;margin-top:-4.4px;background:#1F6B6B;border-radius:2.48px;transform:rotate(240deg) translateY(-12px) rotate(26deg)"></span><span style="position:absolute;top:50%;left:50%;width:2.48px;height:8.8px;margin-left:-1.24px;margin-top:-4.4px;background:#1F6B6B;border-radius:2.48px;transform:rotate(270deg) translateY(-12px) rotate(26deg)"></span><span style="position:absolute;top:50%;left:50%;width:2.48px;height:8.8px;margin-left:-1.24px;margin-top:-4.4px;background:#1F6B6B;border-radius:2.48px;transform:rotate(300deg) translateY(-12px) rotate(26deg)"></span><span style="position:absolute;top:50%;left:50%;width:2.48px;height:8.8px;margin-left:-1.24px;margin-top:-4.4px;background:#1F6B6B;border-radius:2.48px;transform:rotate(330deg) translateY(-12px) rotate(26deg)"></span></span>
+              <span style="font-family:'IBM Plex Mono',monospace;font-size:0.66rem;letter-spacing:0.18em;text-transform:uppercase;color:#3A7A74">Message sent</span>
+              <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(1.5rem,2.6vw,2.1rem);line-height:1.12;letter-spacing:-0.01em;margin:0;color:#1B1916">Thanks <span data-confirm-name></span> — we'll be in touch.</h3>
+              <p style="font-size:1.02rem;line-height:1.6;color:#43403a;margin:0;max-width:42ch">We read every note personally. Expect a reply within two business days to start the conversation.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer style="background:#1B1916;color:#F4F1E9;border-top:1px solid rgba(244,241,233,0.14)">
+  <div style="max-width:1240px;margin:0 auto;padding:clamp(40px,5vw,64px) clamp(20px,5vw,64px);display:flex;flex-wrap:wrap;justify-content:space-between;gap:32px;align-items:flex-start">
+    <div style="max-width:340px">
+      <div style="margin-bottom:14px"><img src="/images/ignitedrive-labs-logo-wide.png" alt="IgniteDrive Labs" width="706" height="103" style="height:26px;width:auto;display:block;filter:brightness(0) invert(1);opacity:0.92"></div>
+      <p style="font-family:'IBM Plex Mono',monospace;font-size:0.78rem;line-height:1.6;color:#9a9388;margin:0">A technology &amp; behavior studio for car wash operators and suppliers. The work starts in the field.</p>
+    </div>
+    <nav aria-label="Footer" style="display:flex;gap:clamp(28px,5vw,64px);flex-wrap:wrap">
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:0.64rem;letter-spacing:0.16em;text-transform:uppercase;color:#7a7468">Labs</span>
+        <a href="/#labs" class="link-hover-ink" style="font-size:0.92rem">Technology Lab</a>
+        <a href="/#labs" class="link-hover-ink" style="font-size:0.92rem">Behavior Lab</a>
+        <a href="/insights.html" class="link-hover-ink" style="font-size:0.92rem">Insights</a>
+        <a href="/#about" class="link-hover-ink" style="font-size:0.92rem">About</a>
+      </div>
+      <div style="display:flex;flex-direction:column;gap:12px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:0.64rem;letter-spacing:0.16em;text-transform:uppercase;color:#7a7468">How we work</span>
+        <a href="/#field" class="link-hover-ink" style="font-size:0.92rem">Field-First approach</a>
+        <a href="/#loop" class="link-hover-ink" style="font-size:0.92rem">The IgniteDrive Loop</a>
+        <a href="/#problems" class="link-hover-ink" style="font-size:0.92rem">Where we apply it</a>
+        <a href="/#contact" class="link-hover-ink" style="font-size:0.92rem">Start a conversation</a>
+      </div>
+    </nav>
+  </div>
+  <div style="max-width:1240px;margin:0 auto;padding:0 clamp(20px,5vw,64px) clamp(32px,4vw,48px)">
+    <div style="border-top:1px solid rgba(244,241,233,0.14);padding-top:22px;display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px;font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:#7a7468">
+      <span>© <span data-year>2026</span> IgniteDrive Labs</span>
+      <span>Car Wash Technology Lab &nbsp;·&nbsp; Car Wash Behavior Lab</span>
+    </div>
+  </div>
+</footer>
+
+<script src="/scripts/site.js" defer></script>
+</body>
+</html>
