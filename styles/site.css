@@ -1,0 +1,240 @@
+/* IgniteDrive Labs — shared site styles
+   Design tokens and global rules only; per-page layout lives inline in each
+   page's markup to stay close to the approved design reference. */
+
+:root {
+  --cream: #F4F1E9;
+  --cream-alt: #ECE7DB;
+  --card-white: #FCFBF7;
+  --ink: #1B1916;
+  --ink-body: #43403a;
+  --ink-muted: #3a352d;
+  --warm-gray: #5a544a;
+  --warm-gray-2: #6b6559;
+  --warm-gray-3: #8d8578;
+  --teal: #1F6B6B;
+  --teal-deep-label: #3A7A74;
+  --teal-light: #5AA39D;
+  --teal-pale: #CFE6E3;
+  --teal-pale-2: #E4F1EF;
+  --on-ink-1: #e3ded4;
+  --on-ink-2: #cbc6bc;
+  --on-ink-3: #9a9388;
+  --error-text: #9a3a2a;
+  --error-bg: #f6e7e2;
+  --hairline: rgba(27, 25, 22, 0.16);
+  --hairline-row: rgba(27, 25, 22, 0.12);
+  --hairline-top: rgba(27, 25, 22, 0.2);
+  --hairline-on-ink: rgba(244, 241, 233, 0.16);
+  --font-display: 'Newsreader', serif;
+  --font-body: 'IBM Plex Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}
+
+/* Reset */
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body {
+  background: var(--cream);
+  color: var(--ink);
+  font-family: var(--font-body);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+img { display: block; max-width: 100%; }
+a { color: inherit; text-decoration: none; }
+::selection { background: var(--teal); color: var(--cream); }
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  left: 12px;
+  top: -60px;
+  z-index: 100;
+  background: var(--ink);
+  color: var(--cream);
+  padding: 12px 18px;
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 500;
+  transition: top 0.15s ease;
+}
+.skip-link:focus {
+  top: 12px;
+}
+
+/* Visible focus ring everywhere */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+select:focus-visible {
+  outline: 2px solid var(--teal);
+  outline-offset: 2px;
+}
+section[style*="background:#1B1916"] a:focus-visible,
+section[style*="background:#1F6B6B"] a:focus-visible,
+footer a:focus-visible {
+  outline-color: var(--teal-light);
+}
+
+/* Motif: rotated-square bullet */
+.diamond {
+  display: inline-block;
+  transform: rotate(45deg);
+  background: var(--teal);
+  flex: none;
+}
+
+/* Hover utilities (design spec: no blur, no radius, hard offsets only) */
+.link-hover:hover { color: var(--teal); }
+.link-hover-underline:hover { color: var(--teal); border-bottom: 1px solid var(--teal); }
+.link-hover-ink { color: var(--on-ink-2); }
+.link-hover-ink:hover { color: var(--teal-light); border-bottom: 1px solid var(--teal-light); }
+
+.btn-ink {
+  display: inline-block;
+  background: var(--ink);
+  color: var(--cream);
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.btn-ink:hover { background: var(--teal); }
+
+.btn-teal {
+  display: inline-block;
+  background: var(--teal);
+  color: var(--cream);
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  transition: background 0.15s ease;
+}
+.btn-teal:hover { background: var(--teal-light); }
+
+.card-hover-light {
+  transition: box-shadow 0.15s ease;
+}
+.card-hover-light:hover {
+  box-shadow: 6px 7px 0 rgba(31, 107, 107, 0.15);
+}
+.card-hover-ink {
+  transition: box-shadow 0.15s ease;
+}
+.card-hover-ink:hover {
+  box-shadow: 6px 7px 0 rgba(31, 107, 107, 0.4);
+}
+.article-card-hover {
+  transition: box-shadow 0.15s ease;
+}
+.article-card-hover:hover {
+  box-shadow: 5px 6px 0 rgba(31, 107, 107, 0.16);
+}
+
+.chip {
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  border: 1px solid rgba(27, 25, 22, 0.26);
+  padding: 5px 10px;
+  display: inline-block;
+}
+
+/* Contact form states */
+.field-error {
+  color: var(--error-text);
+  background: var(--error-bg);
+  border: 1px solid rgba(154, 58, 42, 0.35);
+  padding: 12px 16px;
+  font-size: 0.9rem;
+  margin: 0 0 16px;
+}
+input, textarea {
+  font-family: var(--font-body);
+  outline: none;
+  border: 1px solid rgba(27, 25, 22, 0.3);
+  background: var(--cream);
+  color: var(--ink);
+}
+input:focus, textarea:focus {
+  border: 1px solid var(--teal);
+}
+button[disabled] { opacity: 0.6; cursor: not-allowed; }
+
+/* Mobile nav */
+.nav-toggle {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  flex: none;
+}
+.nav-toggle svg { display: block; }
+.nav-mobile-panel {
+  display: none;
+}
+
+@media (max-width: 640px) {
+  .nav-links { display: none !important; }
+  .nav-toggle { display: flex; align-items: center; justify-content: center; }
+  .nav-mobile-panel {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 60;
+    background: var(--cream);
+    padding: 20px clamp(20px, 5vw, 64px);
+    transform: translateY(-100%);
+    transition: transform 0.2s ease;
+    overflow-y: auto;
+  }
+  .nav-mobile-panel.is-open { transform: translateY(0); }
+  .nav-mobile-panel a {
+    display: block;
+    font-size: 1.15rem;
+    font-weight: 500;
+    padding: 14px 0;
+    border-bottom: 1px solid var(--hairline);
+  }
+  .nav-mobile-panel .btn-ink { margin-top: 20px; text-align: center; }
+  body.nav-open { overflow: hidden; }
+}
+
+/* Anchor offset for sticky header (avoids the header covering the target heading) */
+#top, #belief, #labs, #field, #loop, #problems, #leverage, #vantage, #about, #insights, #contact {
+  scroll-margin-top: 62px;
+}
+
+@media (max-width: 760px) {
+  .hero-scrim {
+    background: linear-gradient(180deg, rgba(244,241,233,0.98) 0%, rgba(244,241,233,0.95) 34%, rgba(244,241,233,0.62) 54%, rgba(244,241,233,0.14) 74%, rgba(244,241,233,0) 90%) !important;
+  }
+  .hero-img { object-position: 64% 22% !important; }
+  #top { min-height: auto !important; }
+  .hero-content { padding-bottom: clamp(190px, 58vw, 330px) !important; }
+  .loop-ring { padding: 0 34px !important; }
+  .loop-node-label { font-size: 0.6rem !important; }
+}
+
+/* Article body copy */
+.body p {
+  font-size: clamp(1.08rem, 1.4vw, 1.2rem);
+  line-height: 1.72;
+  color: #2a2722;
+  margin: 0 0 1.45em;
+  text-wrap: pretty;
+}
+.body p a {
+  color: var(--teal);
+  border-bottom: 1px solid rgba(31, 107, 107, 0.4);
+}
+.body h2 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(1.6rem, 2.8vw, 2.2rem);
+  line-height: 1.12;
+  letter-spacing: -0.01em;
+  margin: clamp(44px, 5vw, 64px) 0 6px;
+}

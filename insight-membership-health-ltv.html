@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Car Wash Membership Health Is About LTV—But Not the Way We're Calculating It Today | IgniteDrive Labs</title>
+<meta name="description" content="A single average LTV can hide two completely different businesses. The next advantage isn't calculating the number — it's understanding why it moves.">
+<link rel="canonical" href="https://www.ignitedrivelabs.com/insight-membership-health-ltv.html">
+<meta name="theme-color" content="#1A6B66">
+<link rel="icon" type="image/png" href="/icon.png">
+<link rel="apple-touch-icon" href="/icon.png">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="IgniteDrive Labs">
+<meta property="og:title" content="Car Wash Membership Health Is About LTV—But Not the Way We're Calculating It Today | IgniteDrive Labs">
+<meta property="og:description" content="A single average LTV can hide two completely different businesses. The next advantage isn't calculating the number — it's understanding why it moves.">
+<meta property="og:image" content="https://www.ignitedrivelabs.com/icon.png">
+<meta property="og:url" content="https://www.ignitedrivelabs.com/insight-membership-health-ltv.html">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Car Wash Membership Health Is About LTV—But Not the Way We're Calculating It Today | IgniteDrive Labs">
+<meta name="twitter:description" content="A single average LTV can hide two completely different businesses. The next advantage isn't calculating the number — it's understanding why it moves.">
+<meta name="twitter:image" content="https://www.ignitedrivelabs.com/icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;1,6..72,400;1,6..72,500&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles/site.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header style="position:sticky;top:0;z-index:50;background:rgba(244,241,233,0.9);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border-bottom:1px solid rgba(27,25,22,0.14)">
+  <div style="max-width:1240px;margin:0 auto;padding:13px clamp(20px,5vw,64px);display:flex;align-items:center;justify-content:space-between;gap:20px">
+    <a href="/" style="display:flex;align-items:center;flex-shrink:0">
+      <img src="/images/ignitedrive-labs-logo-wide.png" alt="IgniteDrive Labs" width="706" height="103" style="height:28px;width:auto;display:block">
+    </a>
+    <nav aria-label="Primary" style="display:flex;align-items:center;gap:clamp(14px,2.4vw,30px)">
+      <span class="nav-links"><a href="/insights.html" class="link-hover-underline" style="font-size:0.9rem;font-weight:500;color:#43403a;padding:4px 0;border-bottom:1px solid transparent">All Insights</a></span>
+      <a href="/#contact" class="btn-ink" style="font-size:0.88rem;padding:9px 17px;white-space:nowrap">Start a Conversation</a>
+      <button type="button" class="nav-toggle" data-nav-open aria-expanded="false" aria-controls="mobile-nav-panel" aria-label="Open menu">
+        <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M3 6h16M3 11h16M3 16h16" stroke="#1B1916" stroke-width="1.6" stroke-linecap="round"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+<div class="nav-mobile-panel" id="mobile-nav-panel" data-nav-panel>
+  <div style="display:flex;justify-content:flex-end;padding-bottom:8px">
+    <button type="button" class="nav-toggle" data-nav-close aria-label="Close menu" style="display:flex">
+      <svg width="22" height="22" viewBox="0 0 22 22" fill="none" aria-hidden="true"><path d="M4 4l14 14M18 4L4 18" stroke="#1B1916" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+  </div>
+  <nav aria-label="Mobile">
+    <a href="/insights.html">All Insights</a>
+    <a href="/#contact" class="btn-ink" style="text-align:center;padding:14px">Start a Conversation</a>
+  </nav>
+</div>
+
+<main id="main">
+<article>
+<div style="max-width:760px;margin:0 auto;padding:clamp(40px,6vw,80px) clamp(20px,5vw,40px) clamp(28px,4vw,44px)">
+  <a href="/insights.html" class="link-hover" style="display:inline-flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace;font-size:0.72rem;letter-spacing:0.14em;text-transform:uppercase;color:#3A7A74;margin-bottom:clamp(28px,4vw,44px)">←&nbsp;&nbsp;Field Notes</a>
+  <div style="display:flex;flex-wrap:wrap;align-items:center;gap:10px;font-family:'IBM Plex Mono',monospace;font-size:0.7rem;letter-spacing:0.16em;text-transform:uppercase;color:#8a8478;margin-bottom:22px">
+    <span style="color:#1F6B6B">Data Study</span>
+    <span aria-hidden="true" style="width:4px;height:4px;background:#c9bfae;transform:rotate(45deg);display:inline-block"></span>
+    <span>Jun 2026</span>
+    <span aria-hidden="true" style="width:4px;height:4px;background:#c9bfae;transform:rotate(45deg);display:inline-block"></span>
+    <span>7 min read</span>
+  </div>
+  <h1 style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(2.2rem,4.6vw,3.6rem);line-height:1.06;letter-spacing:-0.018em;margin:0 0 22px;text-wrap:balance">Car Wash Membership Health Is About LTV—But Not the Way We're Calculating It Today</h1>
+  <p style="font-family:'Newsreader',serif;font-style:italic;font-size:clamp(1.25rem,2vw,1.6rem);line-height:1.35;color:#4a453c;margin:0 0 30px;max-width:42ch;text-wrap:pretty">A single average LTV can hide two completely different businesses. The next advantage isn't calculating the number — it's understanding why it moves.</p>
+  <div style="display:flex;align-items:center;gap:13px;padding-top:24px;border-top:1px solid rgba(27,25,22,0.16)">
+    <div style="width:42px;height:42px;border-radius:50%;overflow:hidden;background:#1B1916;flex:none">
+      <img src="/images/kyle-doyle.webp" alt="Kyle Doyle" width="933" height="1400" style="width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(1) contrast(1.08)">
+    </div>
+    <div style="display:flex;flex-direction:column;gap:2px">
+      <span style="font-size:0.96rem;font-weight:600;color:#1B1916">Kyle Doyle</span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:#8a8478">Founder, IgniteDrive Labs</span>
+    </div>
+  </div>
+</div>
+
+<div style="max-width:980px;margin:0 auto clamp(36px,5vw,56px);padding:0 clamp(20px,5vw,40px)">
+  <div style="position:relative;border:1px solid #1B1916;aspect-ratio:16/9;overflow:hidden;background:#1B1916">
+    <img src="/images/ltv-blood-pressure.webp" alt="A doctor watching a queue of cars enter a car wash, each tagged with a different LTV value, beside a patient-health dashboard" width="1280" height="720" style="width:100%;height:100%;object-fit:cover;object-position:center">
+    <span style="position:absolute;top:14px;left:14px;font-family:'IBM Plex Mono',monospace;font-size:0.6rem;letter-spacing:0.1em;color:#F4F1E9;background:rgba(27,25,22,0.55);padding:3px 6px">FIG. 01</span>
+    <span style="position:absolute;bottom:14px;left:14px;font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.06em;text-transform:uppercase;background:#1B1916;color:#F4F1E9;padding:6px 9px">the average masks the individuals</span>
+  </div>
+</div>
+
+<div class="body" style="max-width:680px;margin:0 auto;padding:0 clamp(20px,5vw,40px) clamp(48px,6vw,80px)">
+
+  <p>Back in the day we used to look at a customer and think of the opportunity in terms of $10 and $20 bills. With membership, one of the biggest shifts has been realizing that every new member represents multiple $100 bills over time. That's why I love that we're finally starting to talk about customer lifetime value (LTV) as an industry.</p>
+
+  <p>LTV forces us to think beyond the initial sale. Instead of asking, “How many memberships did we sell?” we begin asking, “What is this customer worth over time?”</p>
+
+  <p style="font-family:'Newsreader',serif;font-size:clamp(1.4rem,2.4vw,1.85rem);line-height:1.2;color:#1B1916;margin:0.4em 0 1.1em">That's an important shift.</p>
+
+  <p>According to our Rinsed data (and broader industry data), the average member LTV is roughly $400. Most operators arrive at that number by multiplying average membership revenue by an estimated customer lifespan, with lifespan typically calculated using the current churn rate.</p>
+
+  <p>That's a perfectly reasonable place to start. But I don't think it's where we should stop.</p>
+
+  <p>Imagine a doctor walking into a waiting room, taking everyone's blood pressure, averaging the results together, and declaring, “This is a pretty healthy group.”</p>
+
+  <p>The average tells you almost nothing about the people sitting in front of you—or what to do to improve their health. One patient may be perfectly healthy. Another may need immediate treatment. The average masks both.</p>
+
+  <blockquote style="margin:clamp(36px,5vw,52px) 0;padding:4px 0 4px clamp(20px,3vw,30px);border-left:3px solid #1F6B6B">
+    <p style="font-family:'Newsreader',serif;font-style:italic;font-weight:500;font-size:clamp(1.5rem,2.8vw,2.1rem);line-height:1.28;color:#1B1916;margin:0;text-wrap:pretty">I think we're making the same mistake with LTV. When we blend every customer into a single number, we lose sight of the differences that actually matter.</p>
+  </blockquote>
+
+  <h2><span style="font-family:'IBM Plex Mono',monospace;font-size:0.7rem;letter-spacing:0.14em;color:#1F6B6B;display:block;margin-bottom:10px">LEVEL 1</span>Measuring the Health of a Location</h2>
+  <div style="width:38px;height:3px;background:#1F6B6B;margin:0 0 24px"></div>
+
+  <p>Operators absolutely need a top-level LTV metric. If you're comparing one location against another, you need a common scorecard. My recommendation is to make that number a little more honest.</p>
+
+  <p>Instead of basing LTV purely on membership revenue and average lifespan, calculate it using expected gross profit per member. Start with average monthly membership revenue, subtract promotional discounts, payment processing fees, and the variable cost of each member's washes, then multiply by average active months.</p>
+
+  <p>It won't be perfect. But it will be a much better reflection of the economics of the business than revenue alone—especially since usage costs can be pretty divergent from member to member (I'm looking at you, Uber driver).</p>
+
+  <p>Take these two express exterior washes. Both report a $400 average customer LTV and both have 5,000 active members. Same headline number—very different economics.</p>
+
+  <div style="margin:clamp(28px,4vw,40px) 0;border:1px solid #1B1916;background:#FCFBF7">
+    <div style="padding:clamp(16px,3vw,22px) clamp(18px,3vw,24px) 0;display:flex;flex-wrap:wrap;align-items:baseline;justify-content:space-between;gap:6px">
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:0.62rem;letter-spacing:0.14em;text-transform:uppercase;color:#3A7A74">FIG. 02 — Two washes, one number</span>
+      <span style="font-family:'IBM Plex Mono',monospace;font-size:0.66rem;color:#8a8478">Both: $400 avg LTV · 5,000 members</span>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
+      <div style="padding:clamp(18px,3vw,24px);border-right:1px solid rgba(27,25,22,0.16)">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:0.66rem;letter-spacing:0.16em;text-transform:uppercase;color:#1F6B6B">Wash A</span>
+        <p style="font-size:0.98rem;line-height:1.5;color:#43403a;margin:12px 0 0">Earns more gross profit every month, but members stay a shorter stretch. Higher monthly value, shorter life.</p>
+      </div>
+      <div style="padding:clamp(18px,3vw,24px)">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:0.66rem;letter-spacing:0.16em;text-transform:uppercase;color:#1F6B6B">Wash B</span>
+        <p style="font-size:0.98rem;line-height:1.5;color:#43403a;margin:12px 0 0">Keeps members longer, but gives much of it back through heavier usage, promo discounts, and higher operating costs.</p>
+      </div>
+    </div>
+    <div style="background:#1B1916;color:#F4F1E9;padding:clamp(18px,2.5vw,24px);display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:18px">
+      <div>
+        <div style="font-family:'Newsreader',serif;font-size:clamp(1.5rem,3vw,2rem);line-height:1;color:#5AA39D">−$360K</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:0.64rem;line-height:1.5;color:#cbc6bc;margin-top:8px">less annual gross profit at Wash B</div>
+      </div>
+      <div>
+        <div style="font-family:'Newsreader',serif;font-size:clamp(1.5rem,3vw,2rem);line-height:1;color:#5AA39D">+84,000</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:0.64rem;line-height:1.5;color:#cbc6bc;margin-top:8px">more member washes every year</div>
+      </div>
+      <div>
+        <div style="font-family:'Newsreader',serif;font-size:clamp(1.5rem,3vw,2rem);line-height:1;color:#5AA39D">+$126K</div>
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:0.64rem;line-height:1.5;color:#cbc6bc;margin-top:8px">more in annual variable operating cost</div>
+      </div>
+    </div>
+  </div>
+  <p style="font-family:'IBM Plex Mono',monospace;font-size:0.72rem;line-height:1.6;color:#8a8478;margin:-0.6em 0 1.45em">Gross profit = revenue remaining after the variable cost of serving members — chemicals, utilities, card processing, and other costs that rise with each wash.</p>
+
+  <blockquote style="margin:clamp(36px,5vw,52px) 0;padding:4px 0 4px clamp(20px,3vw,30px);border-left:3px solid #1F6B6B">
+    <p style="font-family:'Newsreader',serif;font-style:italic;font-weight:500;font-size:clamp(1.4rem,2.6vw,1.95rem);line-height:1.3;color:#1B1916;margin:0;text-wrap:pretty">The top-level LTV tells you which location is healthier. It doesn't tell you why.</p>
+  </blockquote>
+
+  <h2><span style="font-family:'IBM Plex Mono',monospace;font-size:0.7rem;letter-spacing:0.14em;color:#1F6B6B;display:block;margin-bottom:10px">LEVEL 2</span>Understanding Why</h2>
+  <div style="width:38px;height:3px;background:#1F6B6B;margin:0 0 24px"></div>
+
+  <p>Once you know Location A has a $420 LTV and Location B has a $360 LTV, the interesting question isn't which location is better. It's why. That's where cohorts become so powerful.</p>
+
+  <p>The first step is deciding which customer groups you want to understand and intentionally tagging them in your POS or CRM. Every operator may choose different cohorts depending on their business—members acquired through a first-month promotion, full-price members, driveway sales, online signups, retail converts, winbacks, family plans, or even members who washed more than three times during their first month.</p>
+
+  <p>Now you're no longer asking “What's our average LTV?” You're asking a sharper question:</p>
+
+  <p style="font-family:'Newsreader',serif;font-size:clamp(1.4rem,2.4vw,1.85rem);line-height:1.2;color:#1B1916;margin:0.4em 0 1.1em">“What kind of customer did this customer journey create?”</p>
+
+  <p>Promotions should no longer be judged simply by how many memberships they sold. They should be judged by the quality of the cohorts they produce.</p>
+
+  <ul style="margin:clamp(24px,3.5vw,34px) 0;padding-left:1.15em;list-style:disc">
+    <li style="color:#1F6B6B;margin-bottom:0.6em"><span style="font-size:clamp(1.06rem,1.4vw,1.18rem);line-height:1.6;color:#2a2722">Did those members <strong style="font-weight:600">stay six months?</strong></span></li>
+    <li style="color:#1F6B6B;margin-bottom:0.6em"><span style="font-size:clamp(1.06rem,1.4vw,1.18rem);line-height:1.6;color:#2a2722">Did they become <strong style="font-weight:600">profitable?</strong></span></li>
+    <li style="color:#1F6B6B;margin-bottom:0.6em"><span style="font-size:clamp(1.06rem,1.4vw,1.18rem);line-height:1.6;color:#2a2722">How much did they <strong style="font-weight:600">wash?</strong></span></li>
+    <li style="color:#1F6B6B"><span style="font-size:clamp(1.06rem,1.4vw,1.18rem);line-height:1.6;color:#2a2722">Did they convert from promotional pricing to <strong style="font-weight:600">full price?</strong></span></li>
+  </ul>
+
+  <p>Those answers should shape the next promotion—not just the monthly marketing report.</p>
+
+  <h2><span style="font-family:'IBM Plex Mono',monospace;font-size:0.7rem;letter-spacing:0.14em;color:#1F6B6B;display:block;margin-bottom:10px">LEVEL 3</span>Improving It</h2>
+  <div style="width:38px;height:3px;background:#1F6B6B;margin:0 0 24px"></div>
+
+  <p>This is where dashboards become far more valuable. Whenever I talk to operators about dashboards or data, I usually ask one question before we look at a single chart:</p>
+
+  <blockquote style="margin:clamp(36px,5vw,52px) 0;padding:4px 0 4px clamp(20px,3vw,30px);border-left:3px solid #1F6B6B">
+    <p style="font-family:'Newsreader',serif;font-style:italic;font-weight:500;font-size:clamp(1.5rem,2.8vw,2.1rem);line-height:1.28;color:#1B1916;margin:0;text-wrap:pretty">“What decision are you trying to make?”</p>
+  </blockquote>
+
+  <p>The best dashboards don't simply report what happened. They help us decide what to do next. Should this cohort receive different messaging? Should we change the introductory offer? Adjust pricing? Redesign onboarding? Stop running this promotion entirely?</p>
+
+  <p>Now LTV stops being a report. It becomes a management system and a playground for experimentation.</p>
+
+  <p>This is also where I think AI becomes genuinely useful. Once your POS and CRM data are organized into meaningful cohorts, and accessible to AI, it can recognize patterns across millions of customer journeys that humans could never see on their own:</p>
+
+  <div style="background:#1B1916;color:#F4F1E9;padding:clamp(26px,3.5vw,40px);margin:clamp(36px,5vw,52px) 0">
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:0.66rem;letter-spacing:0.18em;text-transform:uppercase;color:#5AA39D;display:block;margin-bottom:18px">Optimization questions, not reporting questions</span>
+    <ul style="margin:0;padding-left:1.15em;list-style:disc">
+      <li style="color:#5AA39D;margin-bottom:0.55em"><span style="font-family:'Newsreader',serif;font-size:clamp(1.16rem,2vw,1.5rem);line-height:1.3;color:#F4F1E9">Which promotions consistently create the healthiest cohorts?</span></li>
+      <li style="color:#5AA39D;margin-bottom:0.55em"><span style="font-family:'Newsreader',serif;font-size:clamp(1.16rem,2vw,1.5rem);line-height:1.3;color:#F4F1E9">Which onboarding sequence produces the most profitable members?</span></li>
+      <li style="color:#5AA39D;margin-bottom:0.55em"><span style="font-family:'Newsreader',serif;font-size:clamp(1.16rem,2vw,1.5rem);line-height:1.3;color:#F4F1E9">Which first-30-day behaviors predict long-term value?</span></li>
+      <li style="color:#5AA39D"><span style="font-family:'Newsreader',serif;font-size:clamp(1.16rem,2vw,1.5rem);line-height:1.3;color:#F4F1E9">Which pricing experiments maximize profitability?</span></li>
+    </ul>
+  </div>
+
+  <p>I'm glad we're no longer seeing our customer opportunities in terms of $10 and $20 bills. Understanding LTV helped us recognize that membership fundamentally changed the economics of our industry—that each new member isn't just another car, it's a long-term asset.</p>
+
+  <p>But I think we've reached the point where calculating LTV is no longer the competitive advantage. Understanding it is. And improving it is.</p>
+
+  <p style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(1.4rem,2.6vw,1.95rem);line-height:1.24;color:#1B1916;margin:0.5em 0 0.2em">The operators who lead the next decade won't simply have the highest reported LTV.</p>
+  <p style="font-family:'Newsreader',serif;font-weight:500;font-size:clamp(1.4rem,2.6vw,1.95rem);line-height:1.24;color:#1F6B6B;margin:0">They'll be the ones who understand why their customers become more valuable—and build better promotions, pricing, and journeys to intentionally create more of them.</p>
+
+</div>
+</article>
+
+<section style="background:#1B1916;color:#F4F1E9">
+  <div style="max-width:760px;margin:0 auto;padding:clamp(48px,6vw,80px) clamp(20px,5vw,40px)">
+    <div style="display:flex;flex-wrap:wrap;gap:24px;align-items:center">
+      <div style="width:72px;height:72px;border-radius:50%;overflow:hidden;background:#F4F1E9;flex:none">
+        <img src="/images/kyle-doyle.webp" alt="Kyle Doyle" width="933" height="1400" style="width:100%;height:100%;object-fit:cover;object-position:center top;filter:grayscale(1) contrast(1.08)">
+      </div>
+      <div style="flex:1 1 300px;min-width:240px">
+        <span style="font-family:'IBM Plex Mono',monospace;font-size:0.66rem;letter-spacing:0.18em;text-transform:uppercase;color:#5AA39D;display:block;margin-bottom:8px">Written by</span>
+        <h3 style="font-family:'Newsreader',serif;font-weight:500;font-size:1.6rem;line-height:1.1;margin:0 0 8px">Kyle Doyle</h3>
+        <p style="font-size:0.98rem;line-height:1.6;color:#cbc6bc;margin:0;max-width:46ch">Founder of IgniteDrive Labs — independent technology and product strategy for car wash operators and suppliers.</p>
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:14px;margin-top:clamp(32px,4vw,44px)">
+      <a href="/#contact" class="btn-teal" style="font-size:0.98rem;padding:15px 26px">Start a Conversation</a>
+      <a href="/insights.html" class="link-hover-ink" style="font-size:0.98rem;font-weight:500;color:#F4F1E9;padding:15px 8px;border-bottom:1px solid rgba(244,241,233,0.4)">More Field Notes&nbsp;→</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer style="background:#14120F;color:#F4F1E9">
+  <div style="max-width:1240px;margin:0 auto;padding:clamp(32px,4vw,48px) clamp(20px,5vw,64px);display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:center">
+    <a href="/"><img src="/images/ignitedrive-labs-logo-wide.png" alt="IgniteDrive Labs" width="706" height="103" style="height:24px;width:auto;display:block;filter:brightness(0) invert(1);opacity:0.9"></a>
+    <span style="font-family:'IBM Plex Mono',monospace;font-size:0.72rem;color:#7a7468">© <span data-year>2026</span> IgniteDrive Labs · Field Notes</span>
+  </div>
+</footer>
+
+<script src="/scripts/site.js" defer></script>
+</body>
+</html>
