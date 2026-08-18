@@ -38,6 +38,27 @@ work that never reaches `main`.
 - No `.vercel/` project link in this repo — deploys happen via the GitHub integration, not the Vercel CLI.
 - Old/renamed URLs get a permanent redirect in `vercel.json`, not silently dropped. Redirect `source` patterns must be `%20`-encoded for paths with spaces (Vercel matches the raw request path, not the decoded one — see `CHANGELOG.md` 2026-08-17 for how this bit us once already).
 
-## Local verification
+## QA checklist before shipping
 
-No dev server needed — this is static files. `python3 -m http.server 8123` from the repo root and open `http://localhost:8123/index.html` is enough. Check the browser console for errors and click through any changed links before committing.
+No dev server needed — this is static files. `python3 -m http.server 8123`
+from the repo root and open `http://localhost:8123/index.html` is enough
+for local checks. Run through whichever of these actually apply to the
+change — don't skip a step just because it's not written down elsewhere:
+
+- **Links touched or added** — extract every `href`/`src` and hit each
+  one with `curl -o /dev/null -w "%{http_code}"`; confirm 200s (or the
+  expected redirect code) across the board. Don't eyeball it in a browser.
+- **Redirects touched** — test the actual HTTP response and `location`
+  header, not just whether a browser lands in the right place. Vercel
+  matches redirect sources against the raw, `%20`-encoded request path —
+  see the 2026-08-17 changelog entry for how this bit us once already.
+- **Contact form touched** — verify the JS logic (loading/success/error
+  states, field validation) by reading the code and driving it via the
+  DOM. Don't trigger a real submission — that hits the live Formspree
+  endpoint and generates a fake lead notification.
+- **Any page touched** — check the browser console for errors, confirm
+  heading order/alt text/focus states still hold (see the accessibility
+  baseline in `STYLE_GUIDE.md`), and check the layout at mobile width
+  (~375px) as well as desktop.
+- Click through any changed links manually as a final sanity check, even
+  after the automated pass above.
