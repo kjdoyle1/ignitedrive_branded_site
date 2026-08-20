@@ -86,9 +86,14 @@ footer a:focus-visible {
   flex: none;
 }
 
-/* Hover utilities (design spec: no blur, no radius, hard offsets only) */
-.link-hover:hover { color: var(--teal); }
-.link-hover-underline:hover { color: var(--teal); border-bottom: 1px solid var(--teal); }
+/* Hover utilities (design spec: no blur, no radius, hard offsets only)
+   !important is required on .link-hover / .link-hover-underline: these
+   classes are paired with an inline color/border-bottom on the same
+   element for the resting state, and an inline style always wins over a
+   stylesheet rule of any specificity (short of !important) — including
+   on :hover — so without it the hover color never actually applied. */
+.link-hover:hover { color: var(--teal) !important; }
+.link-hover-underline:hover { color: var(--teal) !important; border-bottom: 1px solid var(--teal) !important; }
 .link-hover-ink { color: var(--on-ink-2); }
 .link-hover-ink:hover { color: var(--teal-light); border-bottom: 1px solid var(--teal-light); }
 
