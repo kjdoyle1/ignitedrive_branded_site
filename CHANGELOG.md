@@ -5,6 +5,17 @@ per meaningful change that reaches production — not every commit.
 
 ---
 
+## 2026-08-20 — Fixed hover states silently not applying sitewide
+
+`.link-hover` and `.link-hover-underline` (nav links, article back-links)
+paired a stylesheet `:hover` color/border with the same properties set
+inline on the resting element — an inline style beats a non-`!important`
+stylesheet rule regardless of specificity, so the hover color never
+actually rendered, since the very first launch. Fixed with `!important`
+on the two affected rules; confirmed via live hover test before and
+after. Buttons and card-shadow hovers were unaffected.
+`f123eeb`
+
 ## 2026-08-17 — Fixed broken redirects from the rebuild
 
 Three of the four old-URL redirects (`Car Wash Behavior Lab.html`, `Car
