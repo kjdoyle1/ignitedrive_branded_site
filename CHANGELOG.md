@@ -5,6 +5,34 @@ per meaningful change that reaches production — not every commit.
 
 ---
 
+## 2026-08-20 — Repointed old lab-page redirects for the v5 rebuild
+
+The v5 rebuild removed `#labs` from the homepage. `Car Wash Behavior
+Lab.html` now redirects to `/#growth`, `Car Wash Technology Lab.html` to
+`/#programs` — the closer conceptual match for each, instead of both
+landing on a section that no longer exists.
+`c918094`
+
+## 2026-08-20 — Rebuilt homepage for v5 technology-focused positioning
+
+Full content and structure rebuild per the new design handoff. Positioning
+shifts from "two labs" to independent technology strategy for enterprise
+car wash, with behavior/growth work explicitly repositioned as secondary.
+New sections: the technology-decision stakes, an independence strip ("not
+a reseller/vendor broker/MSP/dev agency/AI consultancy"), four 90-day
+programs (POS Decision & Migration Readiness, Enterprise Tech Stack
+Review, AI Readiness, Build-vs-Buy Sprint) replacing the old two-labs
+framing, "Inside our labs" introducing Sentinel (in development, not
+linked), a technology-focused 6-quote problem grid, and a quieter 3-card
+Growth & Operating Performance band. Founder bio expanded with real
+career detail. Same visual design system throughout — colors, type,
+spacing, and components unchanged, content and structure only. Supersedes
+the standalone market-intelligence banner from the previous patch —
+Sentinel now covers that ground. `insights.html` nav/footer/contact-form
+options updated to match; article pages were confirmed unchanged and left
+untouched.
+`4b88c76` · [PR #3](https://github.com/kjdoyle1/ignitedrive_branded_site/pull/3)
+
 ## 2026-08-20 — Fixed hover states silently not applying sitewide
 
 `.link-hover` and `.link-hover-underline` (nav links, article back-links)
