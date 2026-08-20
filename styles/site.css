@@ -208,7 +208,7 @@ button[disabled] { opacity: 0.6; cursor: not-allowed; }
 }
 
 /* Anchor offset for sticky header (avoids the header covering the target heading) */
-#top, #belief, #labs, #field, #loop, #problems, #leverage, #vantage, #about, #insights, #contact {
+#top, #problem, #programs, #field, #intel, #problems, #growth, #about, #insights, #contact {
   scroll-margin-top: 62px;
 }
 
@@ -221,6 +221,7 @@ button[disabled] { opacity: 0.6; cursor: not-allowed; }
   .hero-content { padding-bottom: clamp(190px, 58vw, 330px) !important; }
   .loop-ring { padding: 0 34px !important; }
   .loop-node-label { font-size: 0.6rem !important; }
+  .ff-line { white-space: normal !important; }
 }
 
 /* Article body copy */
