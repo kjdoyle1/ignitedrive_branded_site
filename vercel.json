@@ -1,8 +1,8 @@
 {
   "redirects": [
     { "source": "/IgniteDrive%20Labs%20v2.html", "destination": "/", "permanent": true },
-    { "source": "/Car%20Wash%20Behavior%20Lab.html", "destination": "/#labs", "permanent": true },
-    { "source": "/Car%20Wash%20Technology%20Lab.html", "destination": "/#labs", "permanent": true },
+    { "source": "/Car%20Wash%20Behavior%20Lab.html", "destination": "/#growth", "permanent": true },
+    { "source": "/Car%20Wash%20Technology%20Lab.html", "destination": "/#programs", "permanent": true },
     { "source": "/Insights.html", "destination": "/insights.html", "permanent": true }
   ]
 }
