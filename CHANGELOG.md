@@ -5,6 +5,16 @@ per meaningful change that reaches production — not every commit.
 
 ---
 
+## 2026-08-20 — Added Vercel Web Analytics
+
+Vanilla-HTML integration (no npm package, no build step) — the tracking
+script route Vercel provisions automatically once Web Analytics is
+enabled on the project. Added to all 6 pages. Confirmed live end-to-end:
+script loads and the pageview beacon (`POST /_vercel/insights/view`)
+fires successfully on the production site. Free up to 50,000 events/month
+on the current plan.
+`74046a2`
+
 ## 2026-08-20 — Repointed old lab-page redirects for the v5 rebuild
 
 The v5 rebuild removed `#labs` from the homepage. `Car Wash Behavior
